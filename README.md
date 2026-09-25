@@ -8,10 +8,10 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Hypercats] |
-| **Track** | [AI] |
-| **Team Lead** | [Arun Kumar ] — [karun01817@gmai.com] |
-| **Members** | [Prathamesh Jadhav], [Nutan Rai], [Disha Solanki] |
+| **Team Name** | Hypercats |
+| **Track** | AI |
+| **Team Lead** | Arun Kumar  — karun01817@gmai.com |
+| **Members** | Prathamesh Jadhav, Nutan Rai, Disha Solanki |
 
 ---
 
@@ -19,7 +19,7 @@
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Investigative agencies handling large-scale digital financial fraud are overwhelmed by fragmented, multi-source data silos, making manual cross-referencing too slow to intercept funds during the critical operational window. Chanakya-Graph solves this by ingesting heterogeneous telecom and banking logs, executing automated network topology analysis, and mapping criminal hierarchies to deliver real-time, court-ready intelligence briefs and bank-freeze notices.]
+Investigative agencies handling large-scale digital financial fraud are overwhelmed by fragmented, multi-source data silos, making manual cross-referencing too slow to intercept funds during the critical operational window. Chanakya-Graph solves this by ingesting heterogeneous telecom and banking logs, executing automated network topology analysis, and mapping criminal hierarchies to deliver real-time, court-ready intelligence briefs and bank-freeze notices.
 
 ---
 
