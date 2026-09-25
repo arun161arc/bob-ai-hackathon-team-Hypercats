@@ -1,4 +1,4 @@
-# 🚀 [Your Project Title Here]
+# 🚀  Chanaykya-Graph : Automated-Intelligence Plateform for Cyber Syndicate Deconvolution 
 
 > ⚠️ **Replace everything in `[ ]` brackets with your actual content before submission.**
 
@@ -8,10 +8,10 @@
 
 | Field | Value |
 |---|---|
-| **Team Name** | [Your Team Name] |
-| **Track** | [AI / DevOps / Sustainability / Open] |
-| **Team Lead** | [Name] — [email@ibm.com] |
-| **Members** | [Name 1], [Name 2], [Name 3] |
+| **Team Name** | [Hypercats] |
+| **Track** | [AI] |
+| **Team Lead** | [Arun Kumar ] — [karun01817@gmai.com] |
+| **Members** | [Prathamesh Jadhav], [Nutan Rai], [Disha Solanki] |
 
 ---
 
@@ -19,7 +19,7 @@
 
 > In 2–3 sentences: What problem does your project solve? Who experiences this problem?
 
-[Describe the real-world problem your project addresses. Be specific about who the user is and what pain point they face.]
+[Investigative agencies handling large-scale digital financial fraud are overwhelmed by fragmented, multi-source data silos, making manual cross-referencing too slow to intercept funds during the critical operational window. Chanakya-Graph solves this by ingesting heterogeneous telecom and banking logs, executing automated network topology analysis, and mapping criminal hierarchies to deliver real-time, court-ready intelligence briefs and bank-freeze notices.]
 
 ---
 
