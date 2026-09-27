@@ -1,0 +1,334 @@
+{
+  "report_metadata": {
+    "report_title": "Chanakya-Graph Investigation Case Brief",
+    "generated_at": "2026-09-27T21:25:05",
+    "report_type": "AI-assisted investigation brief",
+    "status": "DRAFT_FOR_HUMAN_REVIEW",
+    "automated_guilt_determination": false
+  },
+  "case_information": {
+    "case_id": "CASE-20260927-212441-0WLSH7",
+    "case_title": "Cyber-Fraud Investigation",
+    "status": "ACTIVE",
+    "data_class": "SYNTHETIC_DEMO",
+    "created_at": "",
+    "manifest": {
+      "case_id": "CASE-20260927-212441-0WLSH7",
+      "case_name": "Cyber Fraud Investigation",
+      "description": "Multi-source cyber-fraud investigation case",
+      "case_type": "USER_INVESTIGATION",
+      "created_at": "2026-09-27T21:24:41.773961",
+      "data_classification": "USER_PROVIDED",
+      "evidence_count": 4,
+      "evidence": [
+        {
+          "evidence_type": "cdr",
+          "original_filename": "cdr_records.csv",
+          "raw_file": "raw\\cdr_records.csv",
+          "normalized_file": "normalized\\cdr_records.csv",
+          "record_count": 10,
+          "sha256": "0d4b0d530a0a6af7562a249c922855e87e2cbb433a8c3a10b8f91398f504b8de",
+          "data_source": "USER_UPLOAD",
+          "evidence_status": "OBSERVED"
+        },
+        {
+          "evidence_type": "upi",
+          "original_filename": "upi_records.csv",
+          "raw_file": "raw\\upi_records.csv",
+          "normalized_file": "normalized\\upi_transactions.csv",
+          "record_count": 12,
+          "sha256": "002cf7039726c10b33b23d803ae75e017cf1b713120cb4cf4d47de4e5abd2663",
+          "data_source": "USER_UPLOAD",
+          "evidence_status": "OBSERVED"
+        },
+        {
+          "evidence_type": "complaints",
+          "original_filename": "complaints_records.csv",
+          "raw_file": "raw\\complaints_records.csv",
+          "normalized_file": "normalized\\complaints.csv",
+          "record_count": 5,
+          "sha256": "dd0809a6c1f9b2271fbd7f7a4bebdd1748980c047ded7f73d0d0961b66617123",
+          "data_source": "USER_UPLOAD",
+          "evidence_status": "OBSERVED"
+        },
+        {
+          "evidence_type": "devices",
+          "original_filename": "devices_records.csv",
+          "raw_file": "raw\\devices_records.csv",
+          "normalized_file": "normalized\\device_records.csv",
+          "record_count": 9,
+          "sha256": "9735d9348d578214be5220524569935dc0626d63a087c33538286bb1c06a4c23",
+          "data_source": "USER_UPLOAD",
+          "evidence_status": "OBSERVED"
+        }
+      ],
+      "analysis_status": {
+        "phase_1_ingestion": "READY",
+        "phase_2_entities": "PENDING",
+        "phase_3_graph": "PENDING",
+        "phase_4_algorithms": "PENDING",
+        "phase_5_ui": "READY",
+        "phase_6_explain_connection": "PENDING",
+        "phase_7_copilot": "PENDING",
+        "phase_8_case_report": "PENDING",
+        "phase_9_edge_cases": "PENDING"
+      }
+    }
+  },
+  "evidence_summary": {
+    "total": 36,
+    "CDR": 10,
+    "UPI": 12,
+    "COMPLAINT": 5,
+    "DEVICE": 9,
+    "OBSERVED": 36
+  },
+  "timeline_summary": {
+    "total_events": 36,
+    "calls": 10,
+    "transactions": 12,
+    "complaints": 5,
+    "device_observations": 9,
+    "total_transaction_amount": 76900.0,
+    "first_event": "2026-09-10 08:00:00",
+    "last_event": "2026-09-16 10:19:00"
+  },
+  "financial_analysis": {
+    "transaction_count": 12,
+    "total_amount_inr": 76900.0,
+    "largest_transaction": {
+      "transaction_id": "TXN-011",
+      "evidence_id": "TXN-011",
+      "timestamp": "2026-09-16 10:15:00",
+      "sender": "",
+      "receiver": "ACC-CASHOUT-601",
+      "amount_inr": 17500.0
+    },
+    "recipients": [
+      {
+        "account": "ACC-HUB-501",
+        "total_received_inr": 20900.0
+      },
+      {
+        "account": "ACC-MULE-401",
+        "total_received_inr": 18500.0
+      },
+      {
+        "account": "ACC-CASHOUT-601",
+        "total_received_inr": 17500.0
+      },
+      {
+        "account": "ACC-MULE-201",
+        "total_received_inr": 16000.0
+      },
+      {
+        "account": "ACC-MULE-301",
+        "total_received_inr": 4000.0
+      }
+    ],
+    "transactions": [
+      {
+        "transaction_id": "TXN-001",
+        "evidence_id": "TXN-001",
+        "timestamp": "2026-09-10 09:25:00",
+        "sender": "",
+        "receiver": "ACC-MULE-201",
+        "amount_inr": 2500.0
+      },
+      {
+        "transaction_id": "TXN-002",
+        "evidence_id": "TXN-002",
+        "timestamp": "2026-09-10 09:31:00",
+        "sender": "",
+        "receiver": "ACC-MULE-301",
+        "amount_inr": 2200.0
+      },
+      {
+        "transaction_id": "TXN-003",
+        "evidence_id": "TXN-003",
+        "timestamp": "2026-09-11 14:20:00",
+        "sender": "",
+        "receiver": "ACC-MULE-201",
+        "amount_inr": 7000.0
+      },
+      {
+        "transaction_id": "TXN-004",
+        "evidence_id": "TXN-004",
+        "timestamp": "2026-09-11 14:27:00",
+        "sender": "",
+        "receiver": "ACC-MULE-401",
+        "amount_inr": 6500.0
+      },
+      {
+        "transaction_id": "TXN-005",
+        "evidence_id": "TXN-005",
+        "timestamp": "2026-09-12 10:49:00",
+        "sender": "",
+        "receiver": "ACC-MULE-301",
+        "amount_inr": 1800.0
+      },
+      {
+        "transaction_id": "TXN-006",
+        "evidence_id": "TXN-006",
+        "timestamp": "2026-09-12 11:02:00",
+        "sender": "",
+        "receiver": "ACC-HUB-501",
+        "amount_inr": 3500.0
+      },
+      {
+        "transaction_id": "TXN-007",
+        "evidence_id": "TXN-007",
+        "timestamp": "2026-09-13 17:35:00",
+        "sender": "",
+        "receiver": "ACC-MULE-401",
+        "amount_inr": 12000.0
+      },
+      {
+        "transaction_id": "TXN-008",
+        "evidence_id": "TXN-008",
+        "timestamp": "2026-09-14 11:58:00",
+        "sender": "",
+        "receiver": "ACC-MULE-201",
+        "amount_inr": 6500.0
+      },
+      {
+        "transaction_id": "TXN-009",
+        "evidence_id": "TXN-009",
+        "timestamp": "2026-09-14 12:08:00",
+        "sender": "",
+        "receiver": "ACC-HUB-501",
+        "amount_inr": 5800.0
+      },
+      {
+        "transaction_id": "TXN-010",
+        "evidence_id": "TXN-010",
+        "timestamp": "2026-09-15 16:31:00",
+        "sender": "",
+        "receiver": "ACC-HUB-501",
+        "amount_inr": 10000.0
+      },
+      {
+        "transaction_id": "TXN-011",
+        "evidence_id": "TXN-011",
+        "timestamp": "2026-09-16 10:15:00",
+        "sender": "",
+        "receiver": "ACC-CASHOUT-601",
+        "amount_inr": 17500.0
+      },
+      {
+        "transaction_id": "TXN-012",
+        "evidence_id": "TXN-012",
+        "timestamp": "2026-09-16 10:19:00",
+        "sender": "",
+        "receiver": "ACC-HUB-501",
+        "amount_inr": 1600.0
+      }
+    ]
+  },
+  "investigative_findings": [
+    {
+      "classification": "OBSERVED",
+      "finding": "36 evidence records were processed.",
+      "support": "Evidence ledger"
+    },
+    {
+      "classification": "OBSERVED",
+      "finding": "12 financial transaction records were identified.",
+      "support": "UPI evidence"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "The total value of transactions represented in the processed timeline is INR 76,900.00.",
+      "support": "UPI transaction aggregation"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "Transactions were associated with 5 distinct recipient entities.",
+      "support": "UPI transaction graph"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "The largest observed transaction was INR 17,500.00.",
+      "support": "TXN-011"
+    },
+    {
+      "classification": "OBSERVED",
+      "finding": "{'type': 'OBSERVED', 'title': 'Evidence successfully processed', 'description': '36 records are available across the four evidence categories.', 'evidence': ['CDR', 'UPI', 'COMPLAINTS', 'DEVICES']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "OBSERVED",
+      "finding": "{'type': 'OBSERVED', 'title': 'Financial transactions identified', 'description': '12 UPI transaction records were identified.', 'evidence': ['UPI']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "{'type': 'DERIVED', 'title': 'Unique entity inventory', 'description': '9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.', 'evidence': ['CDR', 'UPI', 'DEVICES', 'COMPLAINTS']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "{'type': 'DERIVED', 'title': 'Multiple transaction recipients', 'description': 'Funds were transferred to 5 unique recipient accounts.', 'evidence': ['UPI']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "{'type': 'DERIVED', 'title': 'Shared device associations', 'description': '1 IMEI association(s) are linked to multiple phone numbers.', 'evidence': ['DEVICES']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "DERIVED",
+      "finding": "{'type': 'DERIVED', 'title': 'Shared tower observations', 'description': '1 tower(s) have observations involving multiple phone numbers.', 'evidence': ['CDR']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "ANALYTICAL INFERENCE",
+      "finding": "{'type': 'ANALYTICAL INFERENCE', 'title': 'Fund-distribution pattern warrants review', 'description': 'The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.', 'evidence': ['UPI']}",
+      "support": "Command Center"
+    },
+    {
+      "classification": "ANALYTICAL INFERENCE",
+      "finding": "{'type': 'ANALYTICAL INFERENCE', 'title': 'Device correlation warrants review', 'description': 'A device associated with multiple phone numbers may provide a useful investigative pivot. Additional evidence should be reviewed before drawing conclusions.', 'evidence': ['DEVICES']}",
+      "support": "Command Center"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "priority": "HIGH",
+      "action": "Preserve the original evidence files and associated integrity metadata.",
+      "reason": "Evidence preservation"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Review the identified financial transactions and associated accounts against the underlying UPI evidence.",
+      "reason": "Financial traceability"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Review recipient accounts and their relationships with other entities in the investigation graph.",
+      "reason": "Network analysis"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Correlate relevant phone, device and tower evidence with the timeline.",
+      "reason": "Infrastructure correlation"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Verify analytical findings against the underlying source records before taking investigative or legal action.",
+      "reason": "Human verification"
+    }
+  ],
+  "methodology": {
+    "observed": "Directly recorded in the processed evidence.",
+    "derived": "Calculated or aggregated from observed evidence.",
+    "analytical_inference": "Investigator-oriented interpretation that requires human verification."
+  },
+  "limitations": [
+    "This report is generated from the processed case dataset.",
+    "Analytical findings do not by themselves establish wrongdoing.",
+    "Synthetic or demonstration datasets must not be represented as real law-enforcement records.",
+    "Any legal classification or investigative action should be validated by the appropriate authorized investigator."
+  ],
+  "case_id": "CASE-20260927-212441-0WLSH7"
+}

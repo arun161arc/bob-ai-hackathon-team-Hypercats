@@ -1,0 +1,1217 @@
+[
+    {
+        "entity_id": "PHONE:4cbec4f3cbf7310d",
+        "entity_type": "PHONE",
+        "raw_value": "919900000101",
+        "canonical_value": "+919900000101",
+        "source_evidence_id": "CDR-000001",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000001",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "CDR-000001",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "CDR-000001",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000002",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "CDR-000002",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "CDR-000002",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "CDR-000002",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d070c3e9bb726bf7",
+        "entity_type": "PHONE",
+        "raw_value": "919900000102",
+        "canonical_value": "+919900000102",
+        "source_evidence_id": "CDR-000003",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000003",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:fde30bb995637785",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345602",
+        "canonical_value": "356789012345602",
+        "source_evidence_id": "CDR-000003",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:afdde9e524f8fdb4",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-02",
+        "canonical_value": "TOWER-DEMO-02",
+        "source_evidence_id": "CDR-000003",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000004",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:7f9748002c13350d",
+        "entity_type": "PHONE",
+        "raw_value": "919900000401",
+        "canonical_value": "+919900000401",
+        "source_evidence_id": "CDR-000004",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "CDR-000004",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "CDR-000004",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d03ff04cc2931d8e",
+        "entity_type": "PHONE",
+        "raw_value": "919900000103",
+        "canonical_value": "+919900000103",
+        "source_evidence_id": "CDR-000005",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000005",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:a7c640078d1a3194",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345603",
+        "canonical_value": "356789012345603",
+        "source_evidence_id": "CDR-000005",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:9f15969c0623859d",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-03",
+        "canonical_value": "TOWER-DEMO-03",
+        "source_evidence_id": "CDR-000005",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000006",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:645838b8e9343207",
+        "entity_type": "PHONE",
+        "raw_value": "919900000501",
+        "canonical_value": "+919900000501",
+        "source_evidence_id": "CDR-000006",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "CDR-000006",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "CDR-000006",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:e03efcece0f04bfe",
+        "entity_type": "PHONE",
+        "raw_value": "919900000104",
+        "canonical_value": "+919900000104",
+        "source_evidence_id": "CDR-000007",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "CDR-000007",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:06a3eb2d638128c2",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345604",
+        "canonical_value": "356789012345604",
+        "source_evidence_id": "CDR-000007",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:e9bddd5397b112c4",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-04",
+        "canonical_value": "TOWER-DEMO-04",
+        "source_evidence_id": "CDR-000007",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:8ac55bc5ab1df35f",
+        "entity_type": "PHONE",
+        "raw_value": "919900000105",
+        "canonical_value": "+919900000105",
+        "source_evidence_id": "CDR-000008",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000008",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:4c222d480a1d87cb",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345605",
+        "canonical_value": "356789012345605",
+        "source_evidence_id": "CDR-000008",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:9b334014c234d8b1",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-05",
+        "canonical_value": "TOWER-DEMO-05",
+        "source_evidence_id": "CDR-000008",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "CDR-000009",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "CDR-000009",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "CDR-000009",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "CDR-000009",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "CDR-000010",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:645838b8e9343207",
+        "entity_type": "PHONE",
+        "raw_value": "919900000501",
+        "canonical_value": "+919900000501",
+        "source_evidence_id": "CDR-000010",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:76ba9187139bb422",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345606",
+        "canonical_value": "356789012345606",
+        "source_evidence_id": "CDR-000010",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:3b714db703436e1d",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-06",
+        "canonical_value": "TOWER-DEMO-06",
+        "source_evidence_id": "CDR-000010",
+        "source_type": "CDR",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:3d3d19375a11afa8",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-101",
+        "canonical_value": "ACC-VICTIM-101",
+        "source_evidence_id": "UPI-000001",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000001",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:fab0748438b9fa95",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-001",
+        "canonical_value": "TXN-001",
+        "source_evidence_id": "UPI-000001",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:923752e721903581",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-001",
+        "canonical_value": "REF-001",
+        "source_evidence_id": "UPI-000001",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000002",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:b8051216f19dadaa",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-301",
+        "canonical_value": "ACC-MULE-301",
+        "source_evidence_id": "UPI-000002",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:922aa158a217ac4f",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-002",
+        "canonical_value": "TXN-002",
+        "source_evidence_id": "UPI-000002",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:ec3d1f803a7679eb",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-002",
+        "canonical_value": "REF-002",
+        "source_evidence_id": "UPI-000002",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4128e723139404c1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-102",
+        "canonical_value": "ACC-VICTIM-102",
+        "source_evidence_id": "UPI-000003",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000003",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:b815f15e720fb323",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-003",
+        "canonical_value": "TXN-003",
+        "source_evidence_id": "UPI-000003",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:e94208ae9d5313bd",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-003",
+        "canonical_value": "REF-003",
+        "source_evidence_id": "UPI-000003",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000004",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1aa6e3ef2cb943bd",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-401",
+        "canonical_value": "ACC-MULE-401",
+        "source_evidence_id": "UPI-000004",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:b3367299ce965e4c",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-004",
+        "canonical_value": "TXN-004",
+        "source_evidence_id": "UPI-000004",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:9c01411c872d58b6",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-004",
+        "canonical_value": "REF-004",
+        "source_evidence_id": "UPI-000004",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4757b9622f39631e",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-103",
+        "canonical_value": "ACC-VICTIM-103",
+        "source_evidence_id": "UPI-000005",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:b8051216f19dadaa",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-301",
+        "canonical_value": "ACC-MULE-301",
+        "source_evidence_id": "UPI-000005",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:5bac91a921d3b120",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-005",
+        "canonical_value": "TXN-005",
+        "source_evidence_id": "UPI-000005",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:3c09b8dae181f892",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-005",
+        "canonical_value": "REF-005",
+        "source_evidence_id": "UPI-000005",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:b8051216f19dadaa",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-301",
+        "canonical_value": "ACC-MULE-301",
+        "source_evidence_id": "UPI-000006",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:d49aaa25d123ceb1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-HUB-501",
+        "canonical_value": "ACC-HUB-501",
+        "source_evidence_id": "UPI-000006",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:c3242905c574ca82",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-006",
+        "canonical_value": "TXN-006",
+        "source_evidence_id": "UPI-000006",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:b93e5bf306ea821d",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-006",
+        "canonical_value": "REF-006",
+        "source_evidence_id": "UPI-000006",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4770042c16eb487d",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-104",
+        "canonical_value": "ACC-VICTIM-104",
+        "source_evidence_id": "UPI-000007",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1aa6e3ef2cb943bd",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-401",
+        "canonical_value": "ACC-MULE-401",
+        "source_evidence_id": "UPI-000007",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:c3cc4dd45563ddd9",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-007",
+        "canonical_value": "TXN-007",
+        "source_evidence_id": "UPI-000007",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:913bf96c354ad79d",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-007",
+        "canonical_value": "REF-007",
+        "source_evidence_id": "UPI-000007",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:21c6d9e331939644",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-105",
+        "canonical_value": "ACC-VICTIM-105",
+        "source_evidence_id": "UPI-000008",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000008",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:895892a7073757a5",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-008",
+        "canonical_value": "TXN-008",
+        "source_evidence_id": "UPI-000008",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:a4da1592ce471661",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-008",
+        "canonical_value": "REF-008",
+        "source_evidence_id": "UPI-000008",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1db749c00295ae4c",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-201",
+        "canonical_value": "ACC-MULE-201",
+        "source_evidence_id": "UPI-000009",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:d49aaa25d123ceb1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-HUB-501",
+        "canonical_value": "ACC-HUB-501",
+        "source_evidence_id": "UPI-000009",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:43a3872ce5960d97",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-009",
+        "canonical_value": "TXN-009",
+        "source_evidence_id": "UPI-000009",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:8514a38c6a945fe3",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-009",
+        "canonical_value": "REF-009",
+        "source_evidence_id": "UPI-000009",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:1aa6e3ef2cb943bd",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-401",
+        "canonical_value": "ACC-MULE-401",
+        "source_evidence_id": "UPI-000010",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:d49aaa25d123ceb1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-HUB-501",
+        "canonical_value": "ACC-HUB-501",
+        "source_evidence_id": "UPI-000010",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:0f4ea9047803b4f8",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-010",
+        "canonical_value": "TXN-010",
+        "source_evidence_id": "UPI-000010",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:6ff55e4ef9afc2b1",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-010",
+        "canonical_value": "REF-010",
+        "source_evidence_id": "UPI-000010",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:d49aaa25d123ceb1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-HUB-501",
+        "canonical_value": "ACC-HUB-501",
+        "source_evidence_id": "UPI-000011",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:bce5974e31b748bc",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-CASHOUT-601",
+        "canonical_value": "ACC-CASHOUT-601",
+        "source_evidence_id": "UPI-000011",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:9cdc8a7522716d2e",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-011",
+        "canonical_value": "TXN-011",
+        "source_evidence_id": "UPI-000011",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:6010c801217bc32b",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-011",
+        "canonical_value": "REF-011",
+        "source_evidence_id": "UPI-000011",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:b8051216f19dadaa",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-MULE-301",
+        "canonical_value": "ACC-MULE-301",
+        "source_evidence_id": "UPI-000012",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:d49aaa25d123ceb1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-HUB-501",
+        "canonical_value": "ACC-HUB-501",
+        "source_evidence_id": "UPI-000012",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TRANSACTION:3537d0f344303d35",
+        "entity_type": "TRANSACTION",
+        "raw_value": "TXN-012",
+        "canonical_value": "TXN-012",
+        "source_evidence_id": "UPI-000012",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "REFERENCE:3960a5c44d2f0922",
+        "entity_type": "REFERENCE",
+        "raw_value": "REF-012",
+        "canonical_value": "REF-012",
+        "source_evidence_id": "UPI-000012",
+        "source_type": "UPI",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PERSON:bf9895e08dd59ecc",
+        "entity_type": "PERSON",
+        "raw_value": "SYNTHETIC VICTIM ONE",
+        "canonical_value": "SYNTHETIC VICTIM ONE",
+        "source_evidence_id": "COMPLAINT-000001",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:4cbec4f3cbf7310d",
+        "entity_type": "PHONE",
+        "raw_value": "919900000101",
+        "canonical_value": "+919900000101",
+        "source_evidence_id": "COMPLAINT-000001",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:3d3d19375a11afa8",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-101",
+        "canonical_value": "ACC-VICTIM-101",
+        "source_evidence_id": "COMPLAINT-000001",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "COMPLAINT-000001",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PERSON:722582a608d65339",
+        "entity_type": "PERSON",
+        "raw_value": "SYNTHETIC VICTIM TWO",
+        "canonical_value": "SYNTHETIC VICTIM TWO",
+        "source_evidence_id": "COMPLAINT-000002",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d070c3e9bb726bf7",
+        "entity_type": "PHONE",
+        "raw_value": "919900000102",
+        "canonical_value": "+919900000102",
+        "source_evidence_id": "COMPLAINT-000002",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4128e723139404c1",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-102",
+        "canonical_value": "ACC-VICTIM-102",
+        "source_evidence_id": "COMPLAINT-000002",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "COMPLAINT-000002",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PERSON:562c1f40d1964c40",
+        "entity_type": "PERSON",
+        "raw_value": "SYNTHETIC VICTIM THREE",
+        "canonical_value": "SYNTHETIC VICTIM THREE",
+        "source_evidence_id": "COMPLAINT-000003",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d03ff04cc2931d8e",
+        "entity_type": "PHONE",
+        "raw_value": "919900000103",
+        "canonical_value": "+919900000103",
+        "source_evidence_id": "COMPLAINT-000003",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4757b9622f39631e",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-103",
+        "canonical_value": "ACC-VICTIM-103",
+        "source_evidence_id": "COMPLAINT-000003",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "COMPLAINT-000003",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PERSON:21ca89eee0cb2e78",
+        "entity_type": "PERSON",
+        "raw_value": "SYNTHETIC VICTIM FOUR",
+        "canonical_value": "SYNTHETIC VICTIM FOUR",
+        "source_evidence_id": "COMPLAINT-000004",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:e03efcece0f04bfe",
+        "entity_type": "PHONE",
+        "raw_value": "919900000104",
+        "canonical_value": "+919900000104",
+        "source_evidence_id": "COMPLAINT-000004",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:4770042c16eb487d",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-104",
+        "canonical_value": "ACC-VICTIM-104",
+        "source_evidence_id": "COMPLAINT-000004",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "COMPLAINT-000004",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PERSON:b076abf914ba61d5",
+        "entity_type": "PERSON",
+        "raw_value": "SYNTHETIC VICTIM FIVE",
+        "canonical_value": "SYNTHETIC VICTIM FIVE",
+        "source_evidence_id": "COMPLAINT-000005",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:8ac55bc5ab1df35f",
+        "entity_type": "PHONE",
+        "raw_value": "919900000105",
+        "canonical_value": "+919900000105",
+        "source_evidence_id": "COMPLAINT-000005",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "BANK_ACCOUNT:21c6d9e331939644",
+        "entity_type": "BANK_ACCOUNT",
+        "raw_value": "ACC-VICTIM-105",
+        "canonical_value": "ACC-VICTIM-105",
+        "source_evidence_id": "COMPLAINT-000005",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "COMPLAINT-000005",
+        "source_type": "COMPLAINT",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:4cbec4f3cbf7310d",
+        "entity_type": "PHONE",
+        "raw_value": "919900000101",
+        "canonical_value": "+919900000101",
+        "source_evidence_id": "DEVICE-000001",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "DEVICE-000001",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "DEVICE-000001",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d070c3e9bb726bf7",
+        "entity_type": "PHONE",
+        "raw_value": "919900000102",
+        "canonical_value": "+919900000102",
+        "source_evidence_id": "DEVICE-000002",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:fde30bb995637785",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345602",
+        "canonical_value": "356789012345602",
+        "source_evidence_id": "DEVICE-000002",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:afdde9e524f8fdb4",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-02",
+        "canonical_value": "TOWER-DEMO-02",
+        "source_evidence_id": "DEVICE-000002",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:d03ff04cc2931d8e",
+        "entity_type": "PHONE",
+        "raw_value": "919900000103",
+        "canonical_value": "+919900000103",
+        "source_evidence_id": "DEVICE-000003",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:a7c640078d1a3194",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345603",
+        "canonical_value": "356789012345603",
+        "source_evidence_id": "DEVICE-000003",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:9f15969c0623859d",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-03",
+        "canonical_value": "TOWER-DEMO-03",
+        "source_evidence_id": "DEVICE-000003",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:e03efcece0f04bfe",
+        "entity_type": "PHONE",
+        "raw_value": "919900000104",
+        "canonical_value": "+919900000104",
+        "source_evidence_id": "DEVICE-000004",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:06a3eb2d638128c2",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345604",
+        "canonical_value": "356789012345604",
+        "source_evidence_id": "DEVICE-000004",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:e9bddd5397b112c4",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-04",
+        "canonical_value": "TOWER-DEMO-04",
+        "source_evidence_id": "DEVICE-000004",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:8ac55bc5ab1df35f",
+        "entity_type": "PHONE",
+        "raw_value": "919900000105",
+        "canonical_value": "+919900000105",
+        "source_evidence_id": "DEVICE-000005",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:4c222d480a1d87cb",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345605",
+        "canonical_value": "356789012345605",
+        "source_evidence_id": "DEVICE-000005",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:9b334014c234d8b1",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-05",
+        "canonical_value": "TOWER-DEMO-05",
+        "source_evidence_id": "DEVICE-000005",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:5b4bbe2cdf2994f4",
+        "entity_type": "PHONE",
+        "raw_value": "919900000201",
+        "canonical_value": "+919900000201",
+        "source_evidence_id": "DEVICE-000006",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:6b80e08afbc1e160",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345601",
+        "canonical_value": "356789012345601",
+        "source_evidence_id": "DEVICE-000006",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "DEVICE-000006",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:a121323aa8f3eb0c",
+        "entity_type": "PHONE",
+        "raw_value": "919900000301",
+        "canonical_value": "+919900000301",
+        "source_evidence_id": "DEVICE-000007",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:76ba9187139bb422",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345606",
+        "canonical_value": "356789012345606",
+        "source_evidence_id": "DEVICE-000007",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:3b714db703436e1d",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-06",
+        "canonical_value": "TOWER-DEMO-06",
+        "source_evidence_id": "DEVICE-000007",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:7f9748002c13350d",
+        "entity_type": "PHONE",
+        "raw_value": "919900000401",
+        "canonical_value": "+919900000401",
+        "source_evidence_id": "DEVICE-000008",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:07ac8beb14c4f744",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345607",
+        "canonical_value": "356789012345607",
+        "source_evidence_id": "DEVICE-000008",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:b67c625c76454656",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-01",
+        "canonical_value": "TOWER-DEMO-01",
+        "source_evidence_id": "DEVICE-000008",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "PHONE:645838b8e9343207",
+        "entity_type": "PHONE",
+        "raw_value": "919900000501",
+        "canonical_value": "+919900000501",
+        "source_evidence_id": "DEVICE-000009",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "IMEI:faadbb3a525f2b9f",
+        "entity_type": "IMEI",
+        "raw_value": "356789012345608",
+        "canonical_value": "356789012345608",
+        "source_evidence_id": "DEVICE-000009",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    },
+    {
+        "entity_id": "TOWER:3b714db703436e1d",
+        "entity_type": "TOWER",
+        "raw_value": "TOWER-DEMO-06",
+        "canonical_value": "TOWER-DEMO-06",
+        "source_evidence_id": "DEVICE-000009",
+        "source_type": "DEVICE",
+        "evidence_status": "OBSERVED"
+    }
+]

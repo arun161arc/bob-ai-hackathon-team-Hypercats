@@ -1,0 +1,813 @@
+{
+  "phase": 16,
+  "phase_name": "FINAL EVIDENCE-LINKED CASE BRIEF",
+  "generated_at": "2026-09-27T21:25:06.104872",
+  "case": {
+    "case_id": "CASE-20260927-212441-0WLSH7",
+    "title": "Investigation Case",
+    "status": "UNKNOWN",
+    "created_at": "",
+    "updated_at": "",
+    "description": ""
+  },
+  "evidence_summary": {
+    "total_evidence": 36,
+    "categories": {
+      "CDR": 10,
+      "UPI": 12,
+      "COMPLAINT": 5,
+      "DEVICE": 9
+    },
+    "evidence_ids": [
+      "CDR-001",
+      "CDR-002",
+      "CDR-003",
+      "CDR-004",
+      "CDR-005",
+      "CDR-006",
+      "CDR-007",
+      "CDR-008",
+      "CDR-009",
+      "CDR-010",
+      "TXN-001",
+      "TXN-002",
+      "TXN-003",
+      "TXN-004",
+      "TXN-005",
+      "TXN-006",
+      "TXN-007",
+      "TXN-008",
+      "TXN-009",
+      "TXN-010",
+      "TXN-011",
+      "TXN-012",
+      "CMP-001",
+      "CMP-002",
+      "CMP-003",
+      "CMP-004",
+      "CMP-005",
+      "DEV-001",
+      "DEV-002",
+      "DEV-003",
+      "DEV-004",
+      "DEV-005",
+      "DEV-006",
+      "DEV-007",
+      "DEV-008",
+      "DEV-009"
+    ]
+  },
+  "timeline_summary": {
+    "total_events": 36,
+    "calls": 10,
+    "transactions": 12,
+    "complaints": 5,
+    "device_observations": 9,
+    "total_transaction_amount": 76900.0,
+    "first_event": "2026-09-10 08:00:00",
+    "last_event": "2026-09-16 10:19:00"
+  },
+  "financial_analysis": {
+    "transaction_count": 12,
+    "total_amount_inr": 76900.0,
+    "average_amount_inr": 6408.333333333333,
+    "maximum_amount_inr": 17500.0,
+    "transactions": [
+      {
+        "timestamp": "2026-09-10 09:25:00",
+        "amount_inr": 2500.0,
+        "description": "",
+        "transaction_id": "TXN-001"
+      },
+      {
+        "timestamp": "2026-09-10 09:31:00",
+        "amount_inr": 2200.0,
+        "description": "",
+        "transaction_id": "TXN-002"
+      },
+      {
+        "timestamp": "2026-09-11 14:20:00",
+        "amount_inr": 7000.0,
+        "description": "",
+        "transaction_id": "TXN-003"
+      },
+      {
+        "timestamp": "2026-09-11 14:27:00",
+        "amount_inr": 6500.0,
+        "description": "",
+        "transaction_id": "TXN-004"
+      },
+      {
+        "timestamp": "2026-09-12 10:49:00",
+        "amount_inr": 1800.0,
+        "description": "",
+        "transaction_id": "TXN-005"
+      },
+      {
+        "timestamp": "2026-09-12 11:02:00",
+        "amount_inr": 3500.0,
+        "description": "",
+        "transaction_id": "TXN-006"
+      },
+      {
+        "timestamp": "2026-09-13 17:35:00",
+        "amount_inr": 12000.0,
+        "description": "",
+        "transaction_id": "TXN-007"
+      },
+      {
+        "timestamp": "2026-09-14 11:58:00",
+        "amount_inr": 6500.0,
+        "description": "",
+        "transaction_id": "TXN-008"
+      },
+      {
+        "timestamp": "2026-09-14 12:08:00",
+        "amount_inr": 5800.0,
+        "description": "",
+        "transaction_id": "TXN-009"
+      },
+      {
+        "timestamp": "2026-09-15 16:31:00",
+        "amount_inr": 10000.0,
+        "description": "",
+        "transaction_id": "TXN-010"
+      },
+      {
+        "timestamp": "2026-09-16 10:15:00",
+        "amount_inr": 17500.0,
+        "description": "",
+        "transaction_id": "TXN-011"
+      },
+      {
+        "timestamp": "2026-09-16 10:19:00",
+        "amount_inr": 1600.0,
+        "description": "",
+        "transaction_id": "TXN-012"
+      }
+    ]
+  },
+  "command_center_findings": [
+    {
+      "type": "OBSERVED",
+      "title": "Evidence successfully processed",
+      "description": "36 records are available across the four evidence categories.",
+      "evidence": [
+        "CDR",
+        "UPI",
+        "COMPLAINTS",
+        "DEVICES"
+      ]
+    },
+    {
+      "type": "OBSERVED",
+      "title": "Financial transactions identified",
+      "description": "12 UPI transaction records were identified.",
+      "evidence": [
+        "UPI"
+      ]
+    },
+    {
+      "type": "DERIVED",
+      "title": "Unique entity inventory",
+      "description": "9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.",
+      "evidence": [
+        "CDR",
+        "UPI",
+        "DEVICES",
+        "COMPLAINTS"
+      ]
+    },
+    {
+      "type": "DERIVED",
+      "title": "Multiple transaction recipients",
+      "description": "Funds were transferred to 5 unique recipient accounts.",
+      "evidence": [
+        "UPI"
+      ]
+    },
+    {
+      "type": "DERIVED",
+      "title": "Shared device associations",
+      "description": "1 IMEI association(s) are linked to multiple phone numbers.",
+      "evidence": [
+        "DEVICES"
+      ]
+    },
+    {
+      "type": "DERIVED",
+      "title": "Shared tower observations",
+      "description": "1 tower(s) have observations involving multiple phone numbers.",
+      "evidence": [
+        "CDR"
+      ]
+    },
+    {
+      "type": "ANALYTICAL INFERENCE",
+      "title": "Fund-distribution pattern warrants review",
+      "description": "The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.",
+      "evidence": [
+        "UPI"
+      ]
+    },
+    {
+      "type": "ANALYTICAL INFERENCE",
+      "title": "Device correlation warrants review",
+      "description": "A device associated with multiple phone numbers may provide a useful investigative pivot. Additional evidence should be reviewed before drawing conclusions.",
+      "evidence": [
+        "DEVICES"
+      ]
+    }
+  ],
+  "investigative_findings": [
+    {
+      "finding": "Case status identified",
+      "detail": "Case status: UNKNOWN",
+      "source": "active_case.json"
+    },
+    {
+      "finding": "Evidence collected",
+      "detail": "36 evidence item(s) are associated with the investigation.",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "finding": "Investigation timeline established",
+      "detail": "36 timeline event(s) were processed.",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "finding": "Communication activity detected",
+      "detail": "10 call event(s) were identified.",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "finding": "Financial activity detected",
+      "detail": "12 transaction event(s) totaling INR 76,900.00.",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "finding": "Complaint activity recorded",
+      "detail": "5 complaint event(s) were identified.",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "finding": "Device observations available",
+      "detail": "9 device observation(s) were recorded.",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "finding": "Financial pattern summarized",
+      "detail": "Average transaction value: INR 6,408.33; maximum transaction value: INR 17,500.00.",
+      "source": "financial timeline analysis"
+    },
+    {
+      "finding": "Evidence successfully processed",
+      "detail": "36 records are available across the four evidence categories.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Financial transactions identified",
+      "detail": "12 UPI transaction records were identified.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Unique entity inventory",
+      "detail": "9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Multiple transaction recipients",
+      "detail": "Funds were transferred to 5 unique recipient accounts.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Shared device associations",
+      "detail": "1 IMEI association(s) are linked to multiple phone numbers.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Shared tower observations",
+      "detail": "1 tower(s) have observations involving multiple phone numbers.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Fund-distribution pattern warrants review",
+      "detail": "The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.",
+      "source": "command_center.json"
+    },
+    {
+      "finding": "Device correlation warrants review",
+      "detail": "A device associated with multiple phone numbers may provide a useful investigative pivot. Additional evidence should be reviewed before drawing conclusions.",
+      "source": "command_center.json"
+    }
+  ],
+  "recommended_actions": [
+    {
+      "priority": "HIGH",
+      "action": "Preserve all collected evidence and maintain evidence integrity.",
+      "basis": "Evidence-linked investigation workflow"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Preserve the investigation timeline and associated timestamps.",
+      "basis": "36 timeline events identified."
+    },
+    {
+      "priority": "HIGH",
+      "action": "Review and preserve relevant transaction records.",
+      "basis": "12 financial transaction(s) identified."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Review relevant communication records associated with the case.",
+      "basis": "10 call event(s) identified."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Preserve relevant device observation records.",
+      "basis": "9 device observation(s) identified."
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Perform investigator review of the evidence-linked case brief.",
+      "basis": "Final Phase 16 case brief generated."
+    }
+  ],
+  "evidence_links": [
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-001",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-002",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-003",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-004",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-005",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-006",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-007",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-008",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-009",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CDR-010",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-001",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-002",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-003",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-004",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-005",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-006",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-007",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-008",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-009",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-010",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-011",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "TXN-012",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CMP-001",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CMP-002",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CMP-003",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CMP-004",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "CMP-005",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-001",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-002",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-003",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-004",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-005",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-006",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-007",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-008",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "EVIDENCE",
+      "id": "DEV-009",
+      "description": "",
+      "source": "evidence_ledger.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-001",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-10 08:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-006",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-10 09:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-001",
+      "event_type": "CALL",
+      "timestamp": "2026-09-10 09:12:00",
+      "source": 919900000101
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-002",
+      "event_type": "CALL",
+      "timestamp": "2026-09-10 09:18:00",
+      "source": 919900000201
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-001",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-10 09:25:00",
+      "source": "ACC-VICTIM-101"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-002",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-10 09:31:00",
+      "source": "ACC-MULE-201"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-002",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-11 13:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-008",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-11 13:30:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-003",
+      "event_type": "CALL",
+      "timestamp": "2026-09-11 14:05:00",
+      "source": 919900000102
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-004",
+      "event_type": "CALL",
+      "timestamp": "2026-09-11 14:16:00",
+      "source": 919900000201
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-003",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-11 14:20:00",
+      "source": "ACC-VICTIM-102"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-004",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-11 14:27:00",
+      "source": "ACC-MULE-201"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CMP-001",
+      "event_type": "COMPLAINT",
+      "timestamp": "2026-09-11 18:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-003",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-12 09:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-007",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-12 10:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-005",
+      "event_type": "CALL",
+      "timestamp": "2026-09-12 10:30:00",
+      "source": 919900000103
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-009",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-12 10:30:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-006",
+      "event_type": "CALL",
+      "timestamp": "2026-09-12 10:44:00",
+      "source": 919900000201
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-005",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-12 10:49:00",
+      "source": "ACC-VICTIM-103"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-006",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-12 11:02:00",
+      "source": "ACC-MULE-301"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CMP-002",
+      "event_type": "COMPLAINT",
+      "timestamp": "2026-09-12 18:30:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-004",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-13 16:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-007",
+      "event_type": "CALL",
+      "timestamp": "2026-09-13 17:20:00",
+      "source": 919900000104
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-007",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-13 17:35:00",
+      "source": "ACC-VICTIM-104"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CMP-003",
+      "event_type": "COMPLAINT",
+      "timestamp": "2026-09-13 20:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "DEV-005",
+      "event_type": "DEVICE_OBSERVATION",
+      "timestamp": "2026-09-14 10:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-008",
+      "event_type": "CALL",
+      "timestamp": "2026-09-14 11:40:00",
+      "source": 919900000105
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-009",
+      "event_type": "CALL",
+      "timestamp": "2026-09-14 11:51:00",
+      "source": 919900000201
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-008",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-14 11:58:00",
+      "source": "ACC-VICTIM-105"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-009",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-14 12:08:00",
+      "source": "ACC-MULE-201"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CMP-004",
+      "event_type": "COMPLAINT",
+      "timestamp": "2026-09-14 19:00:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CDR-010",
+      "event_type": "CALL",
+      "timestamp": "2026-09-15 16:22:00",
+      "source": 919900000301
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-010",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-15 16:31:00",
+      "source": "ACC-MULE-401"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "CMP-005",
+      "event_type": "COMPLAINT",
+      "timestamp": "2026-09-15 18:45:00",
+      "source": "investigation_timeline.json"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-011",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-16 10:15:00",
+      "source": "ACC-HUB-501"
+    },
+    {
+      "type": "TIMELINE_EVENT",
+      "id": "TXN-012",
+      "event_type": "TRANSACTION",
+      "timestamp": "2026-09-16 10:19:00",
+      "source": "ACC-MULE-301"
+    }
+  ],
+  "source_files": {
+    "active_case": "C:\\Users\\PRATHAMESH JVH\\Desktop\\bob-ai-hackathon-team-Hypercats\\src\\data\\cases\\active_case.json",
+    "command_center": "C:\\Users\\PRATHAMESH JVH\\Desktop\\bob-ai-hackathon-team-Hypercats\\src\\output\\investigation\\command_center.json",
+    "evidence_ledger": "C:\\Users\\PRATHAMESH JVH\\Desktop\\bob-ai-hackathon-team-Hypercats\\src\\output\\investigation\\evidence_ledger.json",
+    "investigation_timeline": "C:\\Users\\PRATHAMESH JVH\\Desktop\\bob-ai-hackathon-team-Hypercats\\src\\output\\investigation\\investigation_timeline.json"
+  },
+  "case_id": "CASE-20260927-212441-0WLSH7"
+}

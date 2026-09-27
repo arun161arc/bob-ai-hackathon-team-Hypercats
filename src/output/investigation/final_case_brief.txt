@@ -1,0 +1,105 @@
+===========================================================================
+CHANAKYA-GRAPH
+FINAL INVESTIGATION CASE BRIEF
+===========================================================================
+
+REPORT STATUS: DRAFT FOR HUMAN REVIEW
+
+1. CASE INFORMATION
+---------------------------------------------------------------------------
+Case ID       : CASE-20260927-212441-0WLSH7
+Case Title    : Cyber-Fraud Investigation
+Case Status   : ACTIVE
+Data Class    : SYNTHETIC_DEMO
+Created At    : 
+
+2. EVIDENCE SUMMARY
+---------------------------------------------------------------------------
+Total Evidence : 36
+CDR            : 10
+UPI            : 12
+Complaints     : 5
+Devices        : 9
+Observed       : 36
+
+3. TIMELINE SUMMARY
+---------------------------------------------------------------------------
+Total Events   : 36
+Calls          : 10
+Transactions   : 12
+Complaints     : 5
+Device Events  : 9
+Transaction Value : INR 76,900.00
+First Event    : 2026-09-10 08:00:00
+Last Event     : 2026-09-16 10:19:00
+
+4. FINANCIAL ANALYSIS
+---------------------------------------------------------------------------
+Transactions   : 12
+Total Value    : INR 76,900.00
+Largest        : INR 17,500.00
+Largest TXN    : TXN-011
+Evidence ID    : TXN-011
+Sender         : 
+Receiver       : ACC-CASHOUT-601
+
+5. INVESTIGATIVE FINDINGS
+---------------------------------------------------------------------------
+1. [OBSERVED] 36 evidence records were processed.
+   Support: Evidence ledger
+2. [OBSERVED] 12 financial transaction records were identified.
+   Support: UPI evidence
+3. [DERIVED] The total value of transactions represented in the processed timeline is INR 76,900.00.
+   Support: UPI transaction aggregation
+4. [DERIVED] Transactions were associated with 5 distinct recipient entities.
+   Support: UPI transaction graph
+5. [DERIVED] The largest observed transaction was INR 17,500.00.
+   Support: TXN-011
+6. [OBSERVED] {'type': 'OBSERVED', 'title': 'Evidence successfully processed', 'description': '36 records are available across the four evidence categories.', 'evidence': ['CDR', 'UPI', 'COMPLAINTS', 'DEVICES']}
+   Support: Command Center
+7. [OBSERVED] {'type': 'OBSERVED', 'title': 'Financial transactions identified', 'description': '12 UPI transaction records were identified.', 'evidence': ['UPI']}
+   Support: Command Center
+8. [DERIVED] {'type': 'DERIVED', 'title': 'Unique entity inventory', 'description': '9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.', 'evidence': ['CDR', 'UPI', 'DEVICES', 'COMPLAINTS']}
+   Support: Command Center
+9. [DERIVED] {'type': 'DERIVED', 'title': 'Multiple transaction recipients', 'description': 'Funds were transferred to 5 unique recipient accounts.', 'evidence': ['UPI']}
+   Support: Command Center
+10. [DERIVED] {'type': 'DERIVED', 'title': 'Shared device associations', 'description': '1 IMEI association(s) are linked to multiple phone numbers.', 'evidence': ['DEVICES']}
+   Support: Command Center
+11. [DERIVED] {'type': 'DERIVED', 'title': 'Shared tower observations', 'description': '1 tower(s) have observations involving multiple phone numbers.', 'evidence': ['CDR']}
+   Support: Command Center
+12. [ANALYTICAL INFERENCE] {'type': 'ANALYTICAL INFERENCE', 'title': 'Fund-distribution pattern warrants review', 'description': 'The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.', 'evidence': ['UPI']}
+   Support: Command Center
+13. [ANALYTICAL INFERENCE] {'type': 'ANALYTICAL INFERENCE', 'title': 'Device correlation warrants review', 'description': 'A device associated with multiple phone numbers may provide a useful investigative pivot. Additional evidence should be reviewed before drawing conclusions.', 'evidence': ['DEVICES']}
+   Support: Command Center
+
+6. IDENTIFIED RECIPIENT ACCOUNTS
+---------------------------------------------------------------------------
+- ACC-HUB-501 : INR 20,900.00
+- ACC-MULE-401 : INR 18,500.00
+- ACC-CASHOUT-601 : INR 17,500.00
+- ACC-MULE-201 : INR 16,000.00
+- ACC-MULE-301 : INR 4,000.00
+
+7. RECOMMENDED INVESTIGATIVE ACTIONS
+---------------------------------------------------------------------------
+1. [HIGH] Preserve the original evidence files and associated integrity metadata.
+   Reason: Evidence preservation
+2. [HIGH] Review the identified financial transactions and associated accounts against the underlying UPI evidence.
+   Reason: Financial traceability
+3. [MEDIUM] Review recipient accounts and their relationships with other entities in the investigation graph.
+   Reason: Network analysis
+4. [MEDIUM] Correlate relevant phone, device and tower evidence with the timeline.
+   Reason: Infrastructure correlation
+5. [MEDIUM] Verify analytical findings against the underlying source records before taking investigative or legal action.
+   Reason: Human verification
+
+8. LIMITATIONS
+---------------------------------------------------------------------------
+- This report is generated from the processed case dataset.
+- Analytical findings do not by themselves establish wrongdoing.
+- Synthetic or demonstration datasets must not be represented as real law-enforcement records.
+- Any legal classification or investigative action should be validated by the appropriate authorized investigator.
+
+===========================================================================
+END OF REPORT
+===========================================================================

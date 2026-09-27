@@ -1,0 +1,18 @@
+[
+  "degree",
+  "in_degree",
+  "out_degree",
+  "betweenness",
+  "call_count",
+  "fund_transfer_count",
+  "total_received",
+  "total_sent",
+  "unique_senders",
+  "unique_receivers",
+  "shared_devices",
+  "shared_towers",
+  "phone_connections",
+  "account_connections",
+  "transaction_velocity",
+  "max_transfer_amount"
+]

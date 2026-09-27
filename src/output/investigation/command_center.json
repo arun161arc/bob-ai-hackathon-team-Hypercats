@@ -1,0 +1,347 @@
+{
+    "status": "ACTIVE",
+    "generated_at": "2026-09-27T21:37:19.838815",
+    "case": {
+        "case_id": "CASE-20260927-212441-0WLSH7",
+        "case_directory": "C:\\Users\\PRATHAMESH JVH\\Desktop\\bob-ai-hackathon-team-Hypercats\\src\\data\\cases\\CASE-20260927-212441-0WLSH7",
+        "title": "Cyber-Fraud Investigation",
+        "description": "Multi-source cyber-fraud investigation case"
+    },
+    "evidence": {
+        "cdr": {
+            "records": 10,
+            "available": true,
+            "columns": [
+                "record_id",
+                "case_id",
+                "timestamp",
+                "caller",
+                "called",
+                "duration_seconds",
+                "imei",
+                "tower_id",
+                "call_type",
+                "data_source"
+            ]
+        },
+        "upi": {
+            "records": 12,
+            "available": true,
+            "columns": [
+                "transaction_id",
+                "case_id",
+                "timestamp",
+                "sender_account",
+                "receiver_account",
+                "sender_type",
+                "receiver_type",
+                "amount_inr",
+                "transaction_status",
+                "reference_id",
+                "data_source"
+            ]
+        },
+        "complaints": {
+            "records": 5,
+            "available": true,
+            "columns": [
+                "complaint_id",
+                "case_id",
+                "complaint_timestamp",
+                "victim_name",
+                "victim_phone",
+                "victim_account",
+                "fraud_category",
+                "complaint_description",
+                "reported_amount_inr",
+                "reported_caller",
+                "data_source"
+            ]
+        },
+        "devices": {
+            "records": 9,
+            "available": true,
+            "columns": [
+                "device_record_id",
+                "case_id",
+                "phone_number",
+                "imei",
+                "device_type",
+                "first_seen",
+                "last_seen",
+                "tower_id",
+                "data_source"
+            ]
+        },
+        "total_records": 36
+    },
+    "entities": {
+        "phones": 9,
+        "accounts": 10,
+        "imeis": 8,
+        "towers": 6,
+        "persons": 5,
+        "transactions": 12
+    },
+    "connections": {
+        "total": 31,
+        "by_relationship": {
+            "CALLED": 10,
+            "TRANSFERRED_FUNDS": 12,
+            "ASSOCIATED_WITH_DEVICE": 9
+        }
+    },
+    "transactions": {
+        "transaction_count": 12,
+        "total_amount_inr": 76900.0,
+        "average_amount_inr": 6408.333333333333,
+        "maximum_transaction": {
+            "transaction_id": "TXN-011",
+            "timestamp": "2026-09-16 10:15:00",
+            "sender": "ACC-HUB-501",
+            "receiver": "ACC-CASHOUT-601",
+            "amount_inr": 17500.0
+        },
+        "unique_senders": 9,
+        "unique_receivers": 5
+    },
+    "money_flow": [
+        {
+            "timestamp": "2026-09-10 09:25:00",
+            "transaction_id": "TXN-001",
+            "sender": "ACC-VICTIM-101",
+            "receiver": "ACC-MULE-201",
+            "amount_inr": 2500.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-10 09:31:00",
+            "transaction_id": "TXN-002",
+            "sender": "ACC-MULE-201",
+            "receiver": "ACC-MULE-301",
+            "amount_inr": 2200.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-11 14:20:00",
+            "transaction_id": "TXN-003",
+            "sender": "ACC-VICTIM-102",
+            "receiver": "ACC-MULE-201",
+            "amount_inr": 7000.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-11 14:27:00",
+            "transaction_id": "TXN-004",
+            "sender": "ACC-MULE-201",
+            "receiver": "ACC-MULE-401",
+            "amount_inr": 6500.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-12 10:49:00",
+            "transaction_id": "TXN-005",
+            "sender": "ACC-VICTIM-103",
+            "receiver": "ACC-MULE-301",
+            "amount_inr": 1800.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-12 11:02:00",
+            "transaction_id": "TXN-006",
+            "sender": "ACC-MULE-301",
+            "receiver": "ACC-HUB-501",
+            "amount_inr": 3500.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-13 17:35:00",
+            "transaction_id": "TXN-007",
+            "sender": "ACC-VICTIM-104",
+            "receiver": "ACC-MULE-401",
+            "amount_inr": 12000.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-14 11:58:00",
+            "transaction_id": "TXN-008",
+            "sender": "ACC-VICTIM-105",
+            "receiver": "ACC-MULE-201",
+            "amount_inr": 6500.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-14 12:08:00",
+            "transaction_id": "TXN-009",
+            "sender": "ACC-MULE-201",
+            "receiver": "ACC-HUB-501",
+            "amount_inr": 5800.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-15 16:31:00",
+            "transaction_id": "TXN-010",
+            "sender": "ACC-MULE-401",
+            "receiver": "ACC-HUB-501",
+            "amount_inr": 10000.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-16 10:15:00",
+            "transaction_id": "TXN-011",
+            "sender": "ACC-HUB-501",
+            "receiver": "ACC-CASHOUT-601",
+            "amount_inr": 17500.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        },
+        {
+            "timestamp": "2026-09-16 10:19:00",
+            "transaction_id": "TXN-012",
+            "sender": "ACC-MULE-301",
+            "receiver": "ACC-HUB-501",
+            "amount_inr": 1600.0,
+            "sender_type": "INDIVIDUAL",
+            "receiver_type": "INDIVIDUAL"
+        }
+    ],
+    "shared_devices": [
+        {
+            "imei": "356789012345601",
+            "phone_numbers": [
+                "919900000101",
+                "919900000201"
+            ],
+            "phone_count": 2
+        }
+    ],
+    "shared_towers": [
+        {
+            "tower_id": "TOWER-DEMO-01",
+            "phone_numbers": [
+                "919900000101",
+                "919900000201"
+            ],
+            "phone_count": 2
+        }
+    ],
+    "findings": [
+        {
+            "type": "OBSERVED",
+            "title": "Evidence successfully processed",
+            "description": "36 records are available across the four evidence categories.",
+            "evidence": [
+                "CDR",
+                "UPI",
+                "COMPLAINTS",
+                "DEVICES"
+            ]
+        },
+        {
+            "type": "OBSERVED",
+            "title": "Financial transactions identified",
+            "description": "12 UPI transaction records were identified.",
+            "evidence": [
+                "UPI"
+            ]
+        },
+        {
+            "type": "DERIVED",
+            "title": "Unique entity inventory",
+            "description": "9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.",
+            "evidence": [
+                "CDR",
+                "UPI",
+                "DEVICES",
+                "COMPLAINTS"
+            ]
+        },
+        {
+            "type": "DERIVED",
+            "title": "Multiple transaction recipients",
+            "description": "Funds were transferred to 5 unique recipient accounts.",
+            "evidence": [
+                "UPI"
+            ]
+        },
+        {
+            "type": "DERIVED",
+            "title": "Shared device associations",
+            "description": "1 IMEI association(s) are linked to multiple phone numbers.",
+            "evidence": [
+                "DEVICES"
+            ]
+        },
+        {
+            "type": "DERIVED",
+            "title": "Shared tower observations",
+            "description": "1 tower(s) have observations involving multiple phone numbers.",
+            "evidence": [
+                "CDR"
+            ]
+        },
+        {
+            "type": "ANALYTICAL INFERENCE",
+            "title": "Fund-distribution pattern warrants review",
+            "description": "The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.",
+            "evidence": [
+                "UPI"
+            ]
+        },
+        {
+            "type": "ANALYTICAL INFERENCE",
+            "title": "Device correlation warrants review",
+            "description": "A device associated with multiple phone numbers may provide a useful investigative pivot. Additional evidence should be reviewed before drawing conclusions.",
+            "evidence": [
+                "DEVICES"
+            ]
+        }
+    ],
+    "investigation_actions": [
+        {
+            "id": "GRAPH",
+            "label": "Open Investigation Graph",
+            "target": "Investigation Graph"
+        },
+        {
+            "id": "CONNECTION",
+            "label": "Explain Connection",
+            "target": "Explain Connection"
+        },
+        {
+            "id": "IMEI",
+            "label": "Analyze IMEI",
+            "target": "IMEI Investigation"
+        },
+        {
+            "id": "TOWER",
+            "label": "Analyze Towers",
+            "target": "Location/Tower Investigation"
+        },
+        {
+            "id": "EDGE",
+            "label": "Analyze Edge Cases",
+            "target": "Edge Case Analysis"
+        },
+        {
+            "id": "COPILOT",
+            "label": "Open Investigation Copilot",
+            "target": "Investigation Copilot"
+        },
+        {
+            "id": "REPORT",
+            "label": "Generate Case Brief",
+            "target": "Case Brief"
+        }
+    ]
+}

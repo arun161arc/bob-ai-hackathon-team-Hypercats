@@ -1,0 +1,108 @@
+{
+  "case_id": "CASE-20260927-212441-0WLSH7",
+  "module": "Edge Case Intelligence",
+  "generated_from": "Current active case canonical evidence",
+  "findings": [
+    {
+      "edge_case": "BURNED_SIM",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "SIM closure/burn status is not directly observable from the supplied CDR fields.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "CLOSED_ACCOUNT",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "Bank-account closure status is not directly observable from the supplied UPI fields.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "CHANGED_SIM_DEVICE",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "No device records are available.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "MISSING_DATA",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "CDR evidence is empty.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "MISSING_DATA",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "UPI evidence is empty.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "MISSING_DATA",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "COMPLAINTS evidence is empty.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "MISSING_DATA",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "DEVICES evidence is empty.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "MISSING_DATA",
+      "classification": "INVESTIGATIVE_SAFEGUARD",
+      "severity": "INFO",
+      "message": "Missing values are surfaced as evidence gaps. The system does not invent missing facts.",
+      "evidence_ids": []
+    },
+    {
+      "edge_case": "ACCOUNT_EMPTIED",
+      "classification": "EVIDENCE_GAP",
+      "severity": "INFO",
+      "message": "The supplied UPI fields do not contain enough information to reconstruct account balances.",
+      "evidence_ids": []
+    }
+  ],
+  "finding_count": 9,
+  "llm_guardrails": {
+    "enabled": true,
+    "rules": [
+      "AI output must be grounded in supplied evidence.",
+      "AI must not invent missing records.",
+      "Every factual finding should reference evidence.",
+      "Analytical inference must be labelled as inference.",
+      "Shared devices do not independently establish identity.",
+      "Shared towers do not independently establish identity.",
+      "A recipient account must not automatically be labelled criminal.",
+      "The system must not make automated guilt determinations.",
+      "Human investigators remain responsible for attribution."
+    ],
+    "allowed_language": [
+      "warrants review",
+      "associated with",
+      "observed",
+      "derived",
+      "analytical inference",
+      "potential coordination node",
+      "high-connectivity node",
+      "transaction-level review"
+    ],
+    "avoid_language": [
+      "mastermind",
+      "criminal",
+      "guilty",
+      "confirmed fraudster",
+      "criminal organization"
+    ]
+  },
+  "limitations": [
+    "Edge-case signals are investigative aids.",
+    "Missing data is not replaced by AI-generated facts.",
+    "Shared infrastructure does not independently establish identity.",
+    "Final attribution requires human investigation and supporting evidence."
+  ]
+}
