@@ -15,6 +15,7 @@ Reporting	Python + JSON/TXT	Generates final case briefs and evidence-linked inve
 Storage	CSV + JSON files	Stores normalized evidence and generated investigation artifacts
 
 Mermaid Architecture Diagram
+```mermaid
 flowchart TB
     %% =========================
     %% USER / INPUT LAYER
@@ -129,7 +130,7 @@ flowchart TB
     Q --> Q5["Fraud Pattern"]
     Q --> Q6["Recommended Actions"]
     Q --> R["Investigator / Authorized Authority"]
-
+```
 
 
 Data Flow
