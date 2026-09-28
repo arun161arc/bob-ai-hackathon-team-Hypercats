@@ -6,6 +6,8 @@ from pathlib import Path
 import streamlit as st
 
 
+
+
 # ============================================================
 # PROJECT PATH
 # ============================================================
@@ -77,37 +79,50 @@ st.markdown(
     }
 
     .finding {
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid #30363d;
-        margin-bottom: 10px;
-        background: #161b22;
-    }
+    padding: 16px 18px;
+    border-radius: 10px;
+    border: 1px solid #30363d;
+    margin-bottom: 12px;
+    background: #161b22;
+}
 
-    .finding-type {
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.8px;
-        margin-bottom: 5px;
-    }
+.finding-type {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 7px;
+}
 
-    .finding-title {
-        font-size: 16px;
-        font-weight: 650;
-        margin-bottom: 5px;
-    }
+.finding-title {
+    font-size: 17px;
+    font-weight: 650;
+    margin-bottom: 6px;
+    color: #f0f6fc;
+}
 
-    .finding-description {
-        color: #9da7b3;
-        font-size: 14px;
-    }
+.finding-description {
+    color: #9da7b3;
+    font-size: 14px;
+    line-height: 1.55;
+}
 
-    .section-title {
-        font-size: 21px;
-        font-weight: 700;
-        margin-top: 20px;
-        margin-bottom: 12px;
-    }
+.finding-evidence {
+    margin-top: 9px;
+    color: #6e7681;
+    font-size: 12px;
+}
+
+.finding-observed {
+    border-left: 4px solid #388bfd;
+}
+
+.finding-derived {
+    border-left: 4px solid #d29922;
+}
+
+.finding-inference {
+    border-left: 4px solid #a371f7;
+}
 
     </style>
     """,
@@ -499,147 +514,3 @@ with infra_columns[1]:
             "No multi-phone tower correlation identified "
             "in the currently processed evidence."
         )
-
-
-# ============================================================
-# FINDINGS
-# ============================================================
-
-st.markdown(
-    '<div class="section-title">'
-    'Investigation Findings'
-    '</div>',
-    unsafe_allow_html=True,
-)
-
-
-for finding in result["findings"]:
-
-    finding_type = finding["type"]
-
-    if finding_type == "OBSERVED":
-        icon = "🔵"
-
-    elif finding_type == "DERIVED":
-        icon = "🟡"
-
-    else:
-        icon = "🟣"
-
-    evidence_text = ", ".join(
-        finding.get(
-            "evidence",
-            []
-        )
-    )
-
-    st.markdown(
-        f"""
-        <div class="finding">
-            <div class="finding-type">
-                {icon} {finding_type}
-            </div>
-
-            <div class="finding-title">
-                {finding["title"]}
-            </div>
-
-            <div class="finding-description">
-                {finding["description"]}
-            </div>
-
-            <div style="
-                margin-top:8px;
-                color:#6e7681;
-                font-size:12px;
-            ">
-                Evidence: {evidence_text}
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
-# ============================================================
-# QUICK INVESTIGATION ACTIONS
-# ============================================================
-
-st.markdown(
-    '<div class="section-title">'
-    'Quick Investigation Actions'
-    '</div>',
-    unsafe_allow_html=True,
-)
-
-actions = result["investigation_actions"]
-
-action_columns = st.columns(4)
-
-for index, action in enumerate(actions):
-
-    column = action_columns[
-        index % 4
-    ]
-
-    with column:
-
-        if st.button(
-            action["label"],
-            key=f"phase9_{action['id']}",
-            use_container_width=True,
-        ):
-
-            st.info(
-                f"Open: {action['target']}"
-            )
-
-
-# ============================================================
-# INVESTIGATION WORKFLOW
-# ============================================================
-
-st.markdown(
-    '<div class="section-title">'
-    'Investigation Workflow'
-    '</div>',
-    unsafe_allow_html=True,
-)
-
-workflow = [
-    "1. CASE INTAKE",
-    "2. EVIDENCE PROCESSING",
-    "3. ENTITY RECONSTRUCTION",
-    "4. GRAPH ANALYSIS",
-    "5. FINANCIAL ANALYSIS",
-    "6. INFRASTRUCTURE CORRELATION",
-    "7. EDGE-CASE REVIEW",
-    "8. EVIDENCE EXPLANATION",
-    "9. CASE BRIEF",
-]
-
-st.progress(
-    9 / 9,
-    text="Investigation pipeline initialized",
-)
-
-st.write(
-    " → ".join(workflow)
-)
-
-
-# ============================================================
-# FOOTER
-# ============================================================
-
-st.divider()
-
-st.caption(
-    "Chanakya-Graph | Phase 9 Investigation Command Center | "
-    "AI-assisted investigation using evidence-linked analysis"
-)
-
-st.caption(
-    "Analytical findings are investigative leads and should "
-    "be validated against source evidence."
-)

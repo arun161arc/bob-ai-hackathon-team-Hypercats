@@ -7,7 +7,7 @@ REPORT STATUS: DRAFT FOR HUMAN REVIEW
 
 1. CASE INFORMATION
 ---------------------------------------------------------------------------
-Case ID       : CASE-20260927-212441-0WLSH7
+Case ID       : CASE-20260928-123744-UG7K14
 Case Title    : Cyber-Fraud Investigation
 Case Status   : ACTIVE
 Data Class    : SYNTHETIC_DEMO
@@ -29,19 +29,19 @@ Calls          : 10
 Transactions   : 12
 Complaints     : 5
 Device Events  : 9
-Transaction Value : INR 76,900.00
+Transaction Value : INR 88,500.00
 First Event    : 2026-09-10 08:00:00
-Last Event     : 2026-09-16 10:19:00
+Last Event     : 2026-09-16 12:00:00
 
 4. FINANCIAL ANALYSIS
 ---------------------------------------------------------------------------
 Transactions   : 12
-Total Value    : INR 76,900.00
+Total Value    : INR 88,500.00
 Largest        : INR 17,500.00
-Largest TXN    : TXN-011
-Evidence ID    : TXN-011
+Largest TXN    : TXN-010
+Evidence ID    : TXN-010
 Sender         : 
-Receiver       : ACC-CASHOUT-601
+Receiver       : ACC-MULE-201
 
 5. INVESTIGATIVE FINDINGS
 ---------------------------------------------------------------------------
@@ -49,23 +49,23 @@ Receiver       : ACC-CASHOUT-601
    Support: Evidence ledger
 2. [OBSERVED] 12 financial transaction records were identified.
    Support: UPI evidence
-3. [DERIVED] The total value of transactions represented in the processed timeline is INR 76,900.00.
+3. [DERIVED] The total value of transactions represented in the processed timeline is INR 88,500.00.
    Support: UPI transaction aggregation
-4. [DERIVED] Transactions were associated with 5 distinct recipient entities.
+4. [DERIVED] Transactions were associated with 4 distinct recipient entities.
    Support: UPI transaction graph
 5. [DERIVED] The largest observed transaction was INR 17,500.00.
-   Support: TXN-011
+   Support: TXN-010
 6. [OBSERVED] {'type': 'OBSERVED', 'title': 'Evidence successfully processed', 'description': '36 records are available across the four evidence categories.', 'evidence': ['CDR', 'UPI', 'COMPLAINTS', 'DEVICES']}
    Support: Command Center
 7. [OBSERVED] {'type': 'OBSERVED', 'title': 'Financial transactions identified', 'description': '12 UPI transaction records were identified.', 'evidence': ['UPI']}
    Support: Command Center
-8. [DERIVED] {'type': 'DERIVED', 'title': 'Unique entity inventory', 'description': '9 phones, 10 accounts, 8 IMEIs and 6 towers were identified from the available evidence.', 'evidence': ['CDR', 'UPI', 'DEVICES', 'COMPLAINTS']}
+8. [DERIVED] {'type': 'DERIVED', 'title': 'Unique entity inventory', 'description': '13 phones, 12 accounts, 8 IMEIs and 5 towers were identified from the available evidence.', 'evidence': ['CDR', 'UPI', 'DEVICES', 'COMPLAINTS']}
    Support: Command Center
-9. [DERIVED] {'type': 'DERIVED', 'title': 'Multiple transaction recipients', 'description': 'Funds were transferred to 5 unique recipient accounts.', 'evidence': ['UPI']}
+9. [DERIVED] {'type': 'DERIVED', 'title': 'Multiple transaction recipients', 'description': 'Funds were transferred to 4 unique recipient accounts.', 'evidence': ['UPI']}
    Support: Command Center
 10. [DERIVED] {'type': 'DERIVED', 'title': 'Shared device associations', 'description': '1 IMEI association(s) are linked to multiple phone numbers.', 'evidence': ['DEVICES']}
    Support: Command Center
-11. [DERIVED] {'type': 'DERIVED', 'title': 'Shared tower observations', 'description': '1 tower(s) have observations involving multiple phone numbers.', 'evidence': ['CDR']}
+11. [DERIVED] {'type': 'DERIVED', 'title': 'Shared tower observations', 'description': '3 tower(s) have observations involving multiple phone numbers.', 'evidence': ['CDR']}
    Support: Command Center
 12. [ANALYTICAL INFERENCE] {'type': 'ANALYTICAL INFERENCE', 'title': 'Fund-distribution pattern warrants review', 'description': 'The presence of multiple transaction recipients may warrant further investigation of the money flow and recipient relationships. This is an analytical lead and is not a determination of wrongdoing.', 'evidence': ['UPI']}
    Support: Command Center
@@ -74,11 +74,10 @@ Receiver       : ACC-CASHOUT-601
 
 6. IDENTIFIED RECIPIENT ACCOUNTS
 ---------------------------------------------------------------------------
-- ACC-HUB-501 : INR 20,900.00
-- ACC-MULE-401 : INR 18,500.00
-- ACC-CASHOUT-601 : INR 17,500.00
-- ACC-MULE-201 : INR 16,000.00
-- ACC-MULE-301 : INR 4,000.00
+- ACC-MULE-201 : INR 39,000.00
+- ACC-HUB-501 : INR 28,000.00
+- ACC-MULE-401 : INR 14,700.00
+- ACC-MULE-301 : INR 6,800.00
 
 7. RECOMMENDED INVESTIGATIVE ACTIONS
 ---------------------------------------------------------------------------

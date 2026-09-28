@@ -1,49 +1,239 @@
-# Architecture
+## Overall Architecture
 
-## System Architecture
+Chanakya-Graph is a **Python + Streamlit AI-assisted cyber-fraud investigation platform**. It ingests structured cyber-fraud evidence such as CDR records, UPI transactions, complaints, and device records, normalizes the data, extracts entities and relationships, builds an investigation graph, performs analytical detection, and presents evidence-linked findings through the dashboard.
 
-[Describe the overall architecture of your system. Replace the Mermaid diagram below with your actual architecture.]
-
-```mermaid
-graph TD
-    A[User / Browser] -->|HTTP| B[Frontend - React]
-    B -->|REST API| C[Backend - FastAPI]
-    C -->|SDK| D[watsonx.ai]
-    C -->|Query| E[PostgreSQL]
-    C -->|Publish| F[Slack Webhook]
-    D -->|Inference Result| C
-```
-
-## Components
+### Components
 
 | Component | Technology | Responsibility |
 |---|---|---|
-| Frontend | [e.g., React 18] | [e.g., Dashboard UI, user interaction] |
-| Backend API | [e.g., FastAPI] | [e.g., Business logic, orchestration] |
-| AI / ML | [e.g., watsonx.ai] | [e.g., Anomaly scoring, classification] |
-| Database | [e.g., PostgreSQL] | [e.g., Storing pipeline events and scores] |
-| Notifications | [e.g., Slack API] | [e.g., Alerting on threshold breaches] |
+| **Frontend** | Streamlit | Investigation dashboard, case intake, graph visualization, timeline, evidence explorer, findings, and case brief |
+| **Application / Orchestration** | Python | Coordinates the investigation pipeline and connects the different analysis phases |
+| **Data Processing** | Python, Pandas, Regex | CSV ingestion, validation, normalization, preprocessing, and structured evidence processing |
+| **Entity & Relationship Extraction** | Python, Regex, deterministic rules | Extracts phones, bank accounts, IMEIs, towers, persons, transactions, and relationships |
+| **Entity Resolution** | Python | Normalizes identifiers and creates canonical entities across multiple evidence sources |
+| **Evidence Ledger** | JSON | Maintains evidence records, provenance, source type, timestamps, and evidence IDs |
+| **Investigation Graph** | NetworkX + JSON | Represents entities as nodes and investigative relationships as edges |
+| **AI / ML Analysis** | Scikit-learn | Fraud-pattern classification and analytical scoring such as mule-chain, funnel-account, shared-device, and multi-hop patterns |
+| **Investigation Copilot** | Python rule-based analysis | Answers investigation-oriented questions using the structured graph and evidence |
+| **Reporting** | Python + JSON/TXT | Generates final case briefs and evidence-linked investigation reports |
+| **Storage** | CSV + JSON files | Stores normalized evidence and generated investigation artifacts |
 
-## Data Flow
 
-[Describe how data moves through your system from input to output.]
+Mermaid Architecture Diagram
+```mermaid
+flowchart TB
+    %% =========================
+    %% USER / INPUT LAYER
+    %% =========================
+    A["Investigator"] --> B["Streamlit Web Dashboard"]
+    B --> C["Case Intake & Case Manager"]
+    C --> D["Evidence Ingestion"]
+    D --> D1["Transaction Records<br/>UPI / Bank"]
+    D --> D2["Call Detail Records<br/>CDR"]
+    D --> D3["Device Records<br/>IMEI / Phone"]
+    D --> D4["Complaint Records"]
+    D --> D5["Other Cyber-Fraud Intelligence"]
+    %% =========================
+    %% DATA PROCESSING
+    %% =========================
+    D1 --> E["Data Validation & Normalization"]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+    D5 --> E
+    E --> F["Entity Extraction"]
+    F --> F1["Person"]
+    F --> F2["Phone"]
+    F --> F3["Bank Account"]
+    F --> F4["Transaction"]
+    F --> F5["IMEI / Device"]
+    F --> F6["Tower / Location"]
+    F --> F7["Reference ID"]
+    %% =========================
+    %% ENTITY RESOLUTION
+    %% =========================
+    F1 --> G["Entity Resolution & Canonicalization"]
+    F2 --> G
+    F3 --> G
+    F4 --> G
+    F5 --> G
+    F6 --> G
+    F7 --> G
+    G --> H["Normalized Entities"]
+    %% =========================
+    %% EVIDENCE PROVENANCE
+    %% =========================
+    E --> I["Evidence Ledger"]
+    I --> I1["Evidence ID"]
+    I --> I2["Source File"]
+    I --> I3["Record ID"]
+    I --> I4["Timestamp"]
+    I --> I5["Extraction Method"]
+    I --> I6["Confidence / Status"]
+    H --> J["Relationship Extraction"]
+    I --> J
+    %% =========================
+    %% GRAPH ENGINE
+    %% =========================
+    J --> K["Investigation Graph"]
+    K --> K1["Nodes<br/>Persons / Phones / Accounts / Devices"]
+    K --> K2["Edges<br/>Calls / Transfers / Shared Devices / Towers"]
+    %% =========================
+    %% ANALYSIS ENGINE
+    %% =========================
+    K --> L["Investigation Analysis Engine"]
+    L --> L1["Fraud Pattern Detection"]
+    L --> L2["Money Flow Analysis"]
+    L --> L3["Shared Device Analysis"]
+    L --> L4["Communication Analysis"]
+    L --> L5["Tower / Location Analysis"]
+    L --> L6["Network / Centrality Analysis"]
+    L --> L7["Timeline Analysis"]
+    %% =========================
+    %% ML
+    %% =========================
+    L --> M["Machine Learning Layer"]
+    M --> M1["Mule Chain Detection"]
+    M --> M2["Funnel Account Detection"]
+    M --> M3["Shared Device Detection"]
+    M --> M4["Multi-Hop Transaction Detection"]
+    %% =========================
+    %% INVESTIGATION COPILOT
+    %% =========================
+    K --> N["Investigation Copilot"]
+    L --> N
+    I --> N
+    N --> N1["Natural Language Queries"]
+    N --> N2["Evidence-Based Answers"]
+    N --> N3["Connection Explanation"]
+    %% =========================
+    %% DASHBOARD
+    %% =========================
+    N --> B
+    K --> B
+    L --> B
+    I --> B
+    B --> O["Investigation Command Center"]
+    O --> O1["Investigation Graph View"]
+    O --> O2["Timeline"]
+    O --> O3["Evidence Explorer"]
+    O --> O4["Financial Flow"]
+    O --> O5["Entity / Network View"]
+    O --> O6["Explain This Connection"]
+    %% =========================
+    %% REPORTING
+    %% =========================
+    O --> P["Case Brief Generator"]
+    I --> P
+    L --> P
+    N --> P
+    P --> Q["Evidence-Linked Case Brief"]
+    Q --> Q1["Case Summary"]
+    Q --> Q2["Observed Evidence"]
+    Q --> Q3["Derived Relationships"]
+    Q --> Q4["Analytical Findings"]
+    Q --> Q5["Fraud Pattern"]
+    Q --> Q6["Recommended Actions"]
+    Q --> R["Investigator / Authorized Authority"]
+```
 
-1. [e.g., Pipeline logs are ingested via a webhook from GitHub Actions]
-2. [e.g., Logs are preprocessed and chunked into 512-token segments]
-3. [e.g., Each chunk is sent to the watsonx.ai inference endpoint]
-4. [e.g., Anomaly scores are stored in PostgreSQL]
-5. [e.g., The React dashboard polls the API every 30 seconds to refresh]
+1. **Case creation**  
+   The investigator creates or loads an investigation case through the Streamlit interface.
 
+2. **Evidence ingestion**  
+   The system accepts structured mock investigation data including:
+   - CDR/call records
+   - UPI transaction records
+   - Complaint records
+   - Device/IMEI records
+
+3. **Normalization**  
+   Python/Pandas processes the input files and converts the records into a consistent internal structure.
+
+4. **Entity extraction**  
+   The system identifies entities such as:
+   - Phone numbers
+   - Bank accounts
+   - IMEIs
+   - Towers
+   - Persons
+   - Transactions
+
+5. **Entity resolution**  
+   Identifiers appearing across different sources are normalized and mapped to canonical entities.
+
+6. **Evidence ledger creation**  
+   Every processed record receives an evidence reference so that findings can be traced back to the underlying source record.
+
+7. **Graph construction**  
+   NetworkX creates an investigation graph where entities become nodes and relationships such as `CALLED`, `TRANSFERRED_FUNDS`, `USED_HARDWARE`, and `CONNECTED_TO_TOWER` become edges.
+
+8. **Investigation analysis**  
+   The analysis layer evaluates the graph and evidence for patterns such as shared devices, funnel accounts, mule chains, and multi-hop fund movement.
+
+9. **Investigation interface**  
+   The Streamlit dashboard exposes the results through the Investigation Command Center, graph, timeline, Evidence Explorer, Copilot, and other investigation views.
+
+10. **Evidence-linked reporting**  
+    Findings are connected back to evidence IDs and compiled into a final case brief for human review.
+
+### Core flow
+
+```text
+Raw Evidence
+     ↓
+Ingestion
+     ↓
+Normalization
+     ↓
+Entity Extraction
+     ↓
+Entity Resolution
+     ↓
+Evidence Ledger
+     ↓
+Investigation Graph
+     ↓
+AI/ML + Rule-Based Analysis
+     ↓
+Investigation Findings
+     ↓
+Timeline / Copilot / Evidence Explorer
+     ↓
+Evidence-Linked Case Briefwould allow substantially larger evidence collections and multiple investigators/cases to be handled concurrently.
+```
 ## Security Considerations
 
-[Note any security decisions relevant to the architecture — even if basic.]
-
-- [e.g., API keys stored in environment variables, never committed to git]
-- [e.g., All API routes require a Bearer token]
-- [e.g., Database credentials rotated via IBM Secrets Manager]
+- Evidence provenance is maintained throughout the pipeline so every analytical finding can be traced to an underlying source record.
+- Investigation outputs distinguish between observed evidence and analytical findings — the system does not make legal guilt determinations.
+- Sensitive configuration values (API keys, credentials) must be stored in environment variables and must never be committed to the repository.
+- Input files should be validated before processing.
+- Generated investigation reports must be treated as sensitive case information.
+- Dashboard access should be restricted when deploying beyond the local hackathon environment.
+- The project uses synthetic/mock investigation data for demonstration; it does not claim access to real banking or telecom systems.
 
 ## Scalability Notes
 
-[Optional: how would this scale beyond the hackathon prototype?]
+The current architecture is intentionally lightweight for a hackathon prototype, using CSV and JSON storage with NetworkX and Streamlit.
 
-[e.g., "The FastAPI backend is stateless and could be horizontally scaled behind a load balancer. The watsonx.ai calls are the bottleneck and would benefit from request batching."]
+For a production-scale version the stack would evolve as follows:
+
+```mermaid
+graph TD
+    UI[Streamlit / React]
+    API[FastAPI Backend]
+    MQ[Message Queue]
+    WRK[Processing Workers]
+    DB[(PostgreSQL + Object Storage)]
+    NEO[(Neo4j Investigation Graph)]
+    ML[ML / LLM Services]
+    DASH[Investigator Dashboard]
+
+    UI --> API --> MQ --> WRK --> DB & NEO --> ML --> DASH
+```
+
+- The graph layer moves from **NetworkX → Neo4j** to support large-scale entity traversal.
+- Evidence storage moves from **JSON/CSV → PostgreSQL + object storage** for durability and concurrent access.
+- The Python pipeline is separated into **independently scalable processing workers** behind a message queue.
+- Multiple investigators and cases can be handled concurrently at this layer.
+

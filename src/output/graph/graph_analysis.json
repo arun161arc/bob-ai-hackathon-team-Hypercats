@@ -1,6 +1,6 @@
 {
   "graph_summary": {
-    "nodes": 62,
+    "nodes": 67,
     "edges": 109,
     "relationship_counts": {
       "CALLED": 10,
@@ -19,85 +19,85 @@
   "top_degree_nodes": [
     [
       "PHONE:5b4bbe2cdf2994f4",
-      0.4098360655737705
-    ],
-    [
-      "IMEI:6b80e08afbc1e160",
-      0.22950819672131148
+      0.3181818181818182
     ],
     [
       "BANK_ACCOUNT:1db749c00295ae4c",
-      0.19672131147540983
+      0.18181818181818182
+    ],
+    [
+      "IMEI:6b80e08afbc1e160",
+      0.15151515151515152
     ],
     [
       "PHONE:a121323aa8f3eb0c",
-      0.18032786885245902
+      0.15151515151515152
+    ],
+    [
+      "PHONE:645838b8e9343207",
+      0.12121212121212122
     ],
     [
       "BANK_ACCOUNT:d49aaa25d123ceb1",
-      0.1639344262295082
+      0.12121212121212122
     ],
     [
-      "TOWER:b67c625c76454656",
-      0.13114754098360656
+      "PHONE:7f9748002c13350d",
+      0.09090909090909091
+    ],
+    [
+      "IMEI:fde30bb995637785",
+      0.09090909090909091
     ],
     [
       "BANK_ACCOUNT:b8051216f19dadaa",
-      0.13114754098360656
+      0.09090909090909091
     ],
     [
       "BANK_ACCOUNT:1aa6e3ef2cb943bd",
-      0.09836065573770492
-    ],
-    [
-      "PHONE:4cbec4f3cbf7310d",
-      0.0819672131147541
-    ],
-    [
-      "PHONE:d070c3e9bb726bf7",
-      0.0819672131147541
+      0.09090909090909091
     ]
   ],
   "top_betweenness_nodes": [
     [
       "PHONE:5b4bbe2cdf2994f4",
-      0.03346994535519126
+      0.03426573426573427
     ],
     [
       "BANK_ACCOUNT:1db749c00295ae4c",
-      0.027049180327868853
-    ],
-    [
-      "BANK_ACCOUNT:d49aaa25d123ceb1",
-      0.013114754098360656
+      0.007692307692307693
     ],
     [
       "PHONE:a121323aa8f3eb0c",
-      0.012021857923497269
-    ],
-    [
-      "BANK_ACCOUNT:b8051216f19dadaa",
-      0.01092896174863388
-    ],
-    [
-      "BANK_ACCOUNT:1aa6e3ef2cb943bd",
-      0.007103825136612021
+      0.007634032634032634
     ],
     [
       "PHONE:645838b8e9343207",
-      0.004508196721311476
+      0.006351981351981352
     ],
     [
-      "BANK_ACCOUNT:3d3d19375a11afa8",
-      0.0035519125683060107
+      "PHONE:4cbec4f3cbf7310d",
+      0.003962703962703963
     ],
     [
-      "BANK_ACCOUNT:4128e723139404c1",
-      0.0035519125683060107
+      "PHONE:f29aeb52c9c64767",
+      0.003962703962703963
     ],
     [
-      "BANK_ACCOUNT:21c6d9e331939644",
-      0.0035519125683060107
+      "PHONE:69299df2b00c7ddd",
+      0.003962703962703963
+    ],
+    [
+      "BANK_ACCOUNT:1aa6e3ef2cb943bd",
+      0.002797202797202797
+    ],
+    [
+      "PHONE:7f9748002c13350d",
+      0.0022144522144522142
+    ],
+    [
+      "BANK_ACCOUNT:b8051216f19dadaa",
+      0.0018648018648018648
     ]
   ],
   "relationship_counts": {
@@ -163,12 +163,11 @@
       ]
     },
     {
-      "entity_id": "PHONE:d070c3e9bb726bf7",
+      "entity_id": "PHONE:7f9748002c13350d",
       "entity_type": "PHONE",
-      "label": "+919900000102",
+      "label": "+919900000401",
       "source_types": [
         "CDR",
-        "COMPLAINT",
         "DEVICE"
       ]
     },
@@ -191,21 +190,11 @@
       ]
     },
     {
-      "entity_id": "PHONE:7f9748002c13350d",
+      "entity_id": "PHONE:645838b8e9343207",
       "entity_type": "PHONE",
-      "label": "+919900000401",
+      "label": "+919900000501",
       "source_types": [
         "CDR",
-        "DEVICE"
-      ]
-    },
-    {
-      "entity_id": "PHONE:d03ff04cc2931d8e",
-      "entity_type": "PHONE",
-      "label": "+919900000103",
-      "source_types": [
-        "CDR",
-        "COMPLAINT",
         "DEVICE"
       ]
     },
@@ -228,28 +217,27 @@
       ]
     },
     {
-      "entity_id": "PHONE:645838b8e9343207",
-      "entity_type": "PHONE",
-      "label": "+919900000501",
-      "source_types": [
-        "CDR",
-        "DEVICE"
-      ]
-    },
-    {
-      "entity_id": "PHONE:e03efcece0f04bfe",
-      "entity_type": "PHONE",
-      "label": "+919900000104",
-      "source_types": [
-        "CDR",
-        "COMPLAINT",
-        "DEVICE"
-      ]
-    },
-    {
       "entity_id": "IMEI:06a3eb2d638128c2",
       "entity_type": "IMEI",
       "label": "356789012345604",
+      "source_types": [
+        "CDR",
+        "DEVICE"
+      ]
+    },
+    {
+      "entity_id": "PHONE:f7c51011d8d9ab89",
+      "entity_type": "PHONE",
+      "label": "+919900000601",
+      "source_types": [
+        "CDR",
+        "DEVICE"
+      ]
+    },
+    {
+      "entity_id": "IMEI:4c222d480a1d87cb",
+      "entity_type": "IMEI",
+      "label": "356789012345605",
       "source_types": [
         "CDR",
         "DEVICE"
@@ -265,9 +253,9 @@
       ]
     },
     {
-      "entity_id": "PHONE:8ac55bc5ab1df35f",
+      "entity_id": "PHONE:f29aeb52c9c64767",
       "entity_type": "PHONE",
-      "label": "+919900000105",
+      "label": "+919900000701",
       "source_types": [
         "CDR",
         "COMPLAINT",
@@ -275,9 +263,28 @@
       ]
     },
     {
-      "entity_id": "IMEI:4c222d480a1d87cb",
+      "entity_id": "IMEI:76ba9187139bb422",
       "entity_type": "IMEI",
-      "label": "356789012345605",
+      "label": "356789012345606",
+      "source_types": [
+        "CDR",
+        "DEVICE"
+      ]
+    },
+    {
+      "entity_id": "PHONE:69299df2b00c7ddd",
+      "entity_type": "PHONE",
+      "label": "+919900000801",
+      "source_types": [
+        "CDR",
+        "COMPLAINT",
+        "DEVICE"
+      ]
+    },
+    {
+      "entity_id": "IMEI:07ac8beb14c4f744",
+      "entity_type": "IMEI",
+      "label": "356789012345607",
       "source_types": [
         "CDR",
         "DEVICE"
@@ -293,63 +300,45 @@
       ]
     },
     {
-      "entity_id": "IMEI:76ba9187139bb422",
-      "entity_type": "IMEI",
-      "label": "356789012345606",
-      "source_types": [
-        "CDR",
-        "DEVICE"
-      ]
-    },
-    {
-      "entity_id": "TOWER:3b714db703436e1d",
-      "entity_type": "TOWER",
-      "label": "TOWER-DEMO-06",
-      "source_types": [
-        "CDR",
-        "DEVICE"
-      ]
-    },
-    {
-      "entity_id": "BANK_ACCOUNT:3d3d19375a11afa8",
+      "entity_id": "BANK_ACCOUNT:f4df41cb276acf65",
       "entity_type": "BANK_ACCOUNT",
-      "label": "ACC-VICTIM-101",
+      "label": "ACC-VICTIM-001",
       "source_types": [
         "UPI",
         "COMPLAINT"
       ]
     },
     {
-      "entity_id": "BANK_ACCOUNT:4128e723139404c1",
+      "entity_id": "BANK_ACCOUNT:7c42ee3b121c8464",
       "entity_type": "BANK_ACCOUNT",
-      "label": "ACC-VICTIM-102",
+      "label": "ACC-VICTIM-002",
       "source_types": [
         "UPI",
         "COMPLAINT"
       ]
     },
     {
-      "entity_id": "BANK_ACCOUNT:4757b9622f39631e",
+      "entity_id": "BANK_ACCOUNT:b17709e9b53f3bef",
       "entity_type": "BANK_ACCOUNT",
-      "label": "ACC-VICTIM-103",
+      "label": "ACC-VICTIM-005",
       "source_types": [
         "UPI",
         "COMPLAINT"
       ]
     },
     {
-      "entity_id": "BANK_ACCOUNT:4770042c16eb487d",
+      "entity_id": "BANK_ACCOUNT:6566438ffb7edd1c",
       "entity_type": "BANK_ACCOUNT",
-      "label": "ACC-VICTIM-104",
+      "label": "ACC-VICTIM-007",
       "source_types": [
         "UPI",
         "COMPLAINT"
       ]
     },
     {
-      "entity_id": "BANK_ACCOUNT:21c6d9e331939644",
+      "entity_id": "BANK_ACCOUNT:32575757985cb3eb",
       "entity_type": "BANK_ACCOUNT",
-      "label": "ACC-VICTIM-105",
+      "label": "ACC-VICTIM-008",
       "source_types": [
         "UPI",
         "COMPLAINT"
@@ -357,5 +346,5 @@
     }
   ],
   "connected_components": 13,
-  "case_id": "CASE-20260927-212441-0WLSH7"
+  "case_id": "CASE-20260928-123744-UG7K14"
 }
