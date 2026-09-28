@@ -136,7 +136,7 @@ docs/
 
 | Name | Role |
 |---|---|
-| Arun Kumar *(Lead)* | — |
-| Prathamesh Jadhav | — |
-| Nutan Rai | — |
-| Disha Solanki | — |
+| Arun Kumar *(Lead)* | —Research & Git Work |
+| Prathamesh Jadhav | — Backend Developer |
+| Nutan Rai | — Documentation & PPT|
+| Disha Solanki | — UI & UX Designer |
