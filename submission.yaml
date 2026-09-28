@@ -32,30 +32,42 @@ submission:
     analysis and mapping criminal hierarchies to deliver real-time,court-ready intelligence briefs and bank-freez notices. 
 
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+    We built Chanakya-Graph, a seven-phase automated intelligence pipeline that ingests heterogeneous
+    cyber-crime evidence (CDR, UPI transaction logs, device/IMEI records, and victim complaints),
+    resolves all identifiers into a canonical entity namespace, constructs a directed investigation
+    graph with centrality metrics, classifies fraud-pattern actors using a RandomForestClassifier,
+    and synthesises everything into an evidence-tier-labelled court-ready case brief — all operable
+    from a browser-based Streamlit investigation workstation.
 
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+    - "Multi-source evidence fusion — automatic ingestion and cross-source entity resolution of CDR, UPI, device, and complaint CSV files into a single canonical namespace"
+    - "Interactive investigation graph — directed MultiDiGraph with degree/betweenness centrality, rendered as a zoomable PyVis network visualization inside the dashboard"
+    - "ML fraud-pattern classification — balanced RandomForestClassifier (300 estimators, depth 12) trained on graph features to rank mule accounts, coordination nodes, and consolidation actors by confidence score"
+    - "Evidence-tier labelling — every finding tagged OBSERVED / DERIVED / ANALYTICAL INFERENCE to preserve court admissibility of the generated case brief"
+    - "Investigation Copilot — free-text query interface over the live graph that answers questions like 'Who received money?' or 'Show shared devices?' without any LLM call"
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["Python 3"]
+    frameworks: ["Streamlit", "NetworkX", "PyVis", "scikit-learn", "pandas", "joblib"]
+    ibm_technologies: ["IBM watsonx.ai (integration-ready)", "IBM Cloud (deployment target)"]
+    databases: ["File-based JSON/CSV artefact store"]
+    other: ["RandomForestClassifier", "GitHub Actions"]
 
   what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+    The end-to-end evidence traceability chain: every analytical output — graph edge, fraud prediction,
+    timeline entry, and case-brief finding — carries the originating source record ID and is explicitly
+    labelled OBSERVED, DERIVED, or ANALYTICAL INFERENCE. This means a prosecutor or bank fraud desk
+    can follow any conclusion directly back to the raw CSV line it came from, making the system
+    immediately usable in a real investigative context and not just a demo.
 
   known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+    The RandomForestClassifier is trained entirely on a synthetic demo dataset; performance on real
+    operational CDR/UPI distributions has not been validated. The Investigation Copilot uses
+    pattern-matching heuristics rather than a live LLM — complex free-text queries outside the
+    supported intent patterns will return a fallback response. The pipeline is single-case and
+    single-threaded; concurrent multi-case workloads are not yet supported. IBM watsonx.ai is
+    integration-ready (env vars wired, swap function documented) but not called at runtime in the
+    submitted build due to hackathon API-key constraints.
 
 # =============================================================================
 # ARTIFACT LOCATIONS
