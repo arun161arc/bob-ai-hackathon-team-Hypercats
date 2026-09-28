@@ -201,4 +201,39 @@ Investigation Findings
 Timeline / Copilot / Evidence Explorer
      ↓
 Evidence-Linked Case Briefwould allow substantially larger evidence collections and multiple investigators/cases to be handled concurrently.
+```
+## Security Considerations
+
+- Evidence provenance is maintained throughout the pipeline so every analytical finding can be traced to an underlying source record.
+- Investigation outputs distinguish between observed evidence and analytical findings — the system does not make legal guilt determinations.
+- Sensitive configuration values (API keys, credentials) must be stored in environment variables and must never be committed to the repository.
+- Input files should be validated before processing.
+- Generated investigation reports must be treated as sensitive case information.
+- Dashboard access should be restricted when deploying beyond the local hackathon environment.
+- The project uses synthetic/mock investigation data for demonstration; it does not claim access to real banking or telecom systems.
+
+## Scalability Notes
+
+The current architecture is intentionally lightweight for a hackathon prototype, using CSV and JSON storage with NetworkX and Streamlit.
+
+For a production-scale version the stack would evolve as follows:
+
+```mermaid
+graph TD
+    UI[Streamlit / React]
+    API[FastAPI Backend]
+    MQ[Message Queue]
+    WRK[Processing Workers]
+    DB[(PostgreSQL + Object Storage)]
+    NEO[(Neo4j Investigation Graph)]
+    ML[ML / LLM Services]
+    DASH[Investigator Dashboard]
+
+    UI --> API --> MQ --> WRK --> DB & NEO --> ML --> DASH
+```
+
+- The graph layer moves from **NetworkX → Neo4j** to support large-scale entity traversal.
+- Evidence storage moves from **JSON/CSV → PostgreSQL + object storage** for durability and concurrent access.
+- The Python pipeline is separated into **independently scalable processing workers** behind a message queue.
+- Multiple investigators and cases can be handled concurrently at this layer.
 
