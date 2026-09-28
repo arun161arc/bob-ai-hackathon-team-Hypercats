@@ -16,22 +16,17 @@ Storage	CSV + JSON files	Stores normalized evidence and generated investigation 
 
 Mermaid Architecture Diagram
 flowchart TB
-
     %% =========================
     %% USER / INPUT LAYER
     %% =========================
     A["Investigator"] --> B["Streamlit Web Dashboard"]
-
     B --> C["Case Intake & Case Manager"]
-
     C --> D["Evidence Ingestion"]
-
     D --> D1["Transaction Records<br/>UPI / Bank"]
     D --> D2["Call Detail Records<br/>CDR"]
     D --> D3["Device Records<br/>IMEI / Phone"]
     D --> D4["Complaint Records"]
     D --> D5["Other Cyber-Fraud Intelligence"]
-
     %% =========================
     %% DATA PROCESSING
     %% =========================
@@ -40,9 +35,7 @@ flowchart TB
     D3 --> E
     D4 --> E
     D5 --> E
-
     E --> F["Entity Extraction"]
-
     F --> F1["Person"]
     F --> F2["Phone"]
     F --> F3["Bank Account"]
@@ -50,7 +43,6 @@ flowchart TB
     F --> F5["IMEI / Device"]
     F --> F6["Tower / Location"]
     F --> F7["Reference ID"]
-
     %% =========================
     %% ENTITY RESOLUTION
     %% =========================
@@ -61,37 +53,29 @@ flowchart TB
     F5 --> G
     F6 --> G
     F7 --> G
-
-    G --> H["Canonical Entities"]
-
+    G --> H["Normalized Entities"]
     %% =========================
     %% EVIDENCE PROVENANCE
     %% =========================
     E --> I["Evidence Ledger"]
-
     I --> I1["Evidence ID"]
     I --> I2["Source File"]
     I --> I3["Record ID"]
     I --> I4["Timestamp"]
     I --> I5["Extraction Method"]
     I --> I6["Confidence / Status"]
-
     H --> J["Relationship Extraction"]
     I --> J
-
     %% =========================
     %% GRAPH ENGINE
     %% =========================
     J --> K["Investigation Graph"]
-
     K --> K1["Nodes<br/>Persons / Phones / Accounts / Devices"]
     K --> K2["Edges<br/>Calls / Transfers / Shared Devices / Towers"]
-
     %% =========================
     %% ANALYSIS ENGINE
     %% =========================
     K --> L["Investigation Analysis Engine"]
-
     L --> L1["Fraud Pattern Detection"]
     L --> L2["Money Flow Analysis"]
     L --> L3["Shared Device Analysis"]
@@ -99,66 +83,54 @@ flowchart TB
     L --> L5["Tower / Location Analysis"]
     L --> L6["Network / Centrality Analysis"]
     L --> L7["Timeline Analysis"]
-
     %% =========================
     %% ML
     %% =========================
     L --> M["Machine Learning Layer"]
-
     M --> M1["Mule Chain Detection"]
     M --> M2["Funnel Account Detection"]
     M --> M3["Shared Device Detection"]
     M --> M4["Multi-Hop Transaction Detection"]
-
     %% =========================
     %% INVESTIGATION COPILOT
     %% =========================
     K --> N["Investigation Copilot"]
-
     L --> N
     I --> N
-
     N --> N1["Natural Language Queries"]
     N --> N2["Evidence-Based Answers"]
     N --> N3["Connection Explanation"]
-
     %% =========================
     %% DASHBOARD
     %% =========================
     N --> B
-
     K --> B
     L --> B
     I --> B
-
     B --> O["Investigation Command Center"]
-
     O --> O1["Investigation Graph View"]
     O --> O2["Timeline"]
     O --> O3["Evidence Explorer"]
     O --> O4["Financial Flow"]
     O --> O5["Entity / Network View"]
     O --> O6["Explain This Connection"]
-
     %% =========================
     %% REPORTING
     %% =========================
     O --> P["Case Brief Generator"]
-
     I --> P
     L --> P
     N --> P
-
     P --> Q["Evidence-Linked Case Brief"]
-
     Q --> Q1["Case Summary"]
     Q --> Q2["Observed Evidence"]
     Q --> Q3["Derived Relationships"]
     Q --> Q4["Analytical Findings"]
     Q --> Q5["Fraud Pattern"]
     Q --> Q6["Recommended Actions"]
-
     Q --> R["Investigator / Authorized Authority"]
+
+
 
 Data Flow
 1.	Case creation
